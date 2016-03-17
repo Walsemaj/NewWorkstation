@@ -36,6 +36,8 @@
 </script>
 </head>
 <body>
+	<section> NOT WORK in IE, try on Chrome or Firefox
+	</section>
 	Time2:
 	<output id="foo"></output>
 	<br>
