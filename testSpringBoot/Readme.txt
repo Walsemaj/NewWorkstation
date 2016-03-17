@@ -8,7 +8,7 @@ Objective
 :Create application.properties for define Port
 
 Start Method
-1. mvn package && java -jar target/gs-spring-boot-0.1.0.jar
+1. mvn package && java -jar target/testSpringBoot-0.0.1-SNAPSHOT.jar
 OR
 2. Maven spring-boot:run
 
