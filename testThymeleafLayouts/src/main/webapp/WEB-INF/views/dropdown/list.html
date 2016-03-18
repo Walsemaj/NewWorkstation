@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html> <!-- layout:decorator="dropdown/layout"> --> 
+<head>
+    <title>Dropdown</title>
+    
+<!--  
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<link id="active_style" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/cosmo/bootstrap.min.css"/>
+-->    
+
+    <link href="../../../resources/css/bootstrap.min.css" rel="stylesheet" media="screen" th:href="@{/resources/css/bootstrap.min.css}"/>
+    <link href="../../../resources/css/core.css" rel="stylesheet" media="screen" th:href="@{/resources/css/core.css}"/>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="../../../resources/js/bootstrap.min.js" th:src="@{/resources/js/bootstrap.min.js}"></script>
+
+</head>
+<body>
+
+<div th:replace="fragments/header :: header">
+    <!-- ============================================================================ -->
+    <!-- This content is only used for static prototyping purposes (natural templates)-->
+    <!-- and is therefore entirely optional, as this markup fragment will be included -->
+    <!-- from "fragments/header.html" at runtime.                                     -->
+    <!-- ============================================================================ -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Static header</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--/* Content of this page will be decorated by the elements of layout.html (dropdown/layout) */-->
+<div layout:fragment="content">
+
+		  <h2>Dropdowns</h2>
+		  <p>The .dropdown class is used to indicate a dropdown menu.</p>
+		  <p>Use the .dropdown-menu class to actually build the dropdown menu.</p>
+		  <p>To open the dropdown menu, use a button or a link with a class of .dropdown-toggle and data-toggle="dropdown".</p>                                          
+		  <div class="dropdown">
+		    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example<span class="caret"></span></button>
+
+			<!--
+		    <ul class="dropdown-menu">
+		      <li><a href="#">HTML</a></li>
+		      <li><a href="#">CSS</a></li>
+		      <li><a href="#">JavaScript</a></li>
+		    </ul>
+		    -->
+
+			<!-- 
+			<tr th:each="task : ${tasks}">
+	            <td th:text="${task.id}">1</td>
+	            <td><a href="#" th:text="${task.title}">Title ...</a></td>
+	            <td th:text="${task.text}">Text ...</td>
+	            <td th:text="${#calendars.format(task.dueTo)}">July 11, 2012 2:17:16 PM CDT</td>
+        	</tr>
+		     -->
+
+			
+			<ul class="dropdown-menu" >
+				<li th:each="dropdown : ${dropdowns}"><a href="#"><span th:text="${dropdown.title}">Options</span></a></li>
+			</ul>
+
+		</div>
+
+			<select id="optionsList" name="optionsListId" th:field="*{dropdowns}">
+				<option th:each="dropdown : ${dropdowns}"
+					th:value="${dropdown.getId()}"
+					th:text="${dropdown.getTitle()}">Options</option>
+			</select>
+</div>
+    <!-- table class="table table-bordered table-striped">
+        <thead>
+        <tr>
+            <td>ID</td>
+            <td>Title</td>
+            <td>Text</td>
+            <td>Due to</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:if="${dropdowns.empty}">
+            <td colspan="4">No tasks</td>
+        </tr>
+        <tr th:each="dropdown : ${dropdowns}">
+            <td th:text="${dropdown.id}">1</td>
+            <td><a href="#" th:text="${dropdown.title}">Title ...</a></td>
+            <td th:text="${dropdown.text}">Text ...</td>
+            <td th:text="${#calendars.format(dropdown.dueTo)}">July 11, 2012 2:17:16 PM CDT</td>
+        </tr>
+        </tbody>
+    </table-->
+    
+	<div th:replace="fragments/footer :: footer">&copy; 2014 The Static Templates</div>    
+</body>
+</html>
