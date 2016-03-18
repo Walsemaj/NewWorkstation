@@ -16,5 +16,10 @@ Start
 1. maven install -DskipTests=true
 2. Run as > Run on server
 
+Objective
+1) Spring Securities
+2) Thymeleaf layouts e.g. th:replace th:include
+3) Dynamic a CSS class, see header.html ?{page...
+
 Test
 1. Temp account for signin testing a@a.com/123
