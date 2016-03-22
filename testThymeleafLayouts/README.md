@@ -23,3 +23,6 @@ Objective
 
 Test
 1. Temp account for signin testing a@a.com/123
+
+Hierarchy
+|_ WebMvcConfig.java MVC Configuration

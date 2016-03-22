@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WebSocket Stomp Receiving Example</title>
+</head>
+<body>
+	<button id="sendRequest" onclick="sendRequest();">Stop</button>
+	<p>Start/Stop printing message</p>
+
+	<div>
+		<h3>Messages:</h3>
+		<ol id="messages"></ol>
+	</div>
+
+	<script type="text/javascript"
+		src="//cdn.jsdelivr.net/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript"
+		src="//cdn.jsdelivr.net/sockjs/0.3.4/sockjs.min.js"></script>
+	<script type="text/javascript"
+		src="//cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+
+	<script type="text/javascript">
+        $(document).ready(function() {
+            var messageList = $("#messages");
+
+            // defined a connection to a new socket endpoint
+            var socket = new SockJS('/stomp');
+
+            var stompClient = Stomp.over(socket);
+            
+            console.log("Subscription Count#1");
+            
+            //var xhttp = new XMLHttpRequest();
+            //xhttp.open("GET", "subscriptionCount", true);
+            //xhttp.send();
+            
+            $.ajax({url: "subscriptionCount", success: function(result){
+                console.log("Subscription Count Page: " + result);
+            }});
+            
+			stompClient.connect({ }, function(frame) {
+                // subscribe to the /topic/message endpoint
+                stompClient.subscribe("/topic/message", function(data) {
+                    var message = data.body;
+                    messageList.append("<li>" + message + "</li>");
+                });
+            });
+        });
+        
+      //Change flag value to pause the pushing from server side
+        function sendRequest() { 
+            $.ajax({url: "sendReqeust", success: function(result){
+                console.log("Send Request: " + Boolean(result));
+                
+                var text = document.getElementById("sendRequest").firstChild;
+				text.data = result == true ? "Stop" : "Start";                
+            }});
+        }
+        
+    </script>
+</body>
+</html>
