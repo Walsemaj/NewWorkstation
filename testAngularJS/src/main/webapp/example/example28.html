@@ -1,0 +1,80 @@
+<html ng-app="countryApp">
+<head>
+<meta charset="utf-8" />
+<title>Simulating a RESTful service by splitting the JSON data
+	across files (with custom directives & local controller)</title>
+<script
+	src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+<script
+	src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular-route.min.js"></script>
+<script>
+	var countryApp = angular.module('countryApp', [ 'ngRoute' ]); //Set a dependency on 'ngRoute'
+
+	countryApp.config(function($routeProvider) {
+		$routeProvider.when('/', {
+			templateUrl : 'country-list5.html',
+			controller : 'CountryListCtrl'
+		}).when('/:countryId', {
+			templateUrl : 'country-detail2.html',
+			controller : 'CountryDetailCtrl'
+		}).otherwise({
+			redirectTo : '/'
+		});
+	})
+
+	countryApp.factory('countries', function($http) {
+		return { //Implementation
+			list : function(callback) {
+				$http({
+					method : 'GET',
+					url : 'countries1.json',
+					cache : true
+				}).success(callback);
+			},
+			find : function(id, callback) {
+				$http({
+					method : 'GET',
+					url : 'country_' + id + '.json',
+					cache : true
+				}).success(callback);
+			}
+		}; //return an object with a function called "list"
+	});
+
+	countryApp.directive('country', function() {
+		return {
+			scope : {
+				country : '=' //Bi-directional binding between local scope property and the parent property
+			},
+			restrict : 'A', //Attribute
+			templateUrl : 'country.html',
+			controller: function($scope, countries) {
+				console.log($scope.country);
+				
+				countries.find($scope.country.id, function(country) {
+					$scope.flagURL = country.flagURL;
+				});
+			}
+		};
+	});
+
+	countryApp.controller('CountryListCtrl', function($scope, countries) { //service with no dollar sign
+		countries.list(function(countries) { //define call function in the service
+			$scope.countries = countries;
+		});
+	});
+
+	countryApp.controller('CountryDetailCtrl', function($scope, $routeParams,
+			countries) {
+		countries.find($routeParams.countryId, function(country) {
+			$scope.country = country;
+			console.log($scope.country);
+		});
+	});
+
+</script>
+</head>
+<body>
+	<div ng-view></div>
+</body>
+</html>

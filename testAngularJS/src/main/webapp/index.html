@@ -1,0 +1,40 @@
+<html ng-app="indexApp">
+<head>
+<meta charset="utf-8" />
+<title>AngularJS Example</title>
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script
+	src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+<script>
+	var indexApp = angular.module('indexApp', []);
+	indexApp.controller('indexCtrl', [ '$scope', '$http',
+			function(scope, http) {
+				http.get('indexTable.json').success(function(data) {
+					scope.examples = data;
+					console.log(scope.examples);
+				});
+			} ]);
+</script>
+</head>
+<body ng-controller="indexCtrl">
+	Search:
+	<input ng-model="query" type="text" />
+	<div class="table-responsive">
+		<table class="table">
+			<tr>
+				<th>ID</th>
+				<th>Example</th>
+			</tr>
+			<tr ng-repeat="example in examples | filter: query">
+				<td id="{{example.id}}">{{example.id}}</td>
+				<td><a href="{{example.pageURL}}">{{example.title}}</a></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

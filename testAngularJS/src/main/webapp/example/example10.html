@@ -1,0 +1,31 @@
+<html ng-app="nameApp">
+<head>
+<meta charset="utf-8" />
+<title>Angular.js Example</title>
+<script
+	src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+	<script>
+		var nameApp = angular.module('nameApp', []); //With list of dependencies
+		nameApp.controller('NameCtrl', function($scope) {
+			$scope.firstName = 'John';
+			
+			$scope.$watch('lastName', function(newValue, oldValue) {
+				console.log('new Value is ' + newValue);
+			});
+		
+			setTimeout(function() {
+				$scope.lastName = 'Smith'; //This is kind of out of Angular JS change
+				$scope.$apply(); //Notify AngularJS if anything is changed out of Angular, then populate into scope
+			}, 1000);
+						
+		});
+	</script>
+</head>
+<body ng-controller='NameCtrl'>
+	Name:
+	<input ng-model="firstName" type="text" />
+	<br> Name:
+	<input ng-model="lastName" type="text" />
+	<br> Hello {{firstName}} {{lastName}}
+</body>
+</html>

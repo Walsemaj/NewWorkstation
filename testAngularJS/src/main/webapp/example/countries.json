@@ -1,0 +1,49 @@
+[
+{
+	"name": "China",
+	"population": 1359821000,
+	"cap": "Beijin",
+	"flagURL": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg",
+	"gdp": 12261
+},
+{
+    "name": "India",
+    "population": 1205625000,
+    "cap": "New Delhi",
+	"flagURL": "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
+	"gdp": 4716
+},
+
+
+{
+    "cap": "Tokyo",
+    "name": "japan",
+    "population": 1382700,
+	"flagURL": "https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg",
+	"gdp": 12261
+},
+
+{
+    "name": "South korea",
+    "population": 13700,
+    "cap": "Seoul",
+	"flagURL": "https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg",
+	"gdp": 12261
+},
+
+{
+    "name": "Iran",
+    "population": 132700,
+    "cap": "Tehran",
+	"flagURL": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Iran.svg",
+	"gdp": 12261
+},
+
+{
+    "name": "Russia",
+    "population": 1485682700,
+    "cap": "Moscow",
+	"flagURL": "https://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg",
+	"gdp": 12261
+}
+]

@@ -1,0 +1,29 @@
+<html ng-app="countryApp">
+<head>
+<meta charset="utf-8" />
+<title>Angular.js Example</title>
+<script
+	src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+<script>
+	var countryApp = angular.module('countryApp', []);
+	countryApp.controller('CountryCtrl', function($scope, $http) { //In function call, you put dollar sign something, Angular will inject for you
+		$http.get('countries.json') //$http object automatically parse json data into object
+		.success(function(data) { //Call back function
+			$scope.countries = data;
+		});
+	});
+</script>
+</head>
+<body ng-controller="CountryCtrl">
+	<table>
+		<tr>
+			<th>Country</th>
+			<th>Population</th>
+		</tr>
+		<tr ng-repeat="country in countries">
+			<td>{{country.name}}</td>
+			<td>{{country.population}}</td>
+		</tr>
+	</table>
+</body>
+</html>

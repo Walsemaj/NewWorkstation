@@ -1,0 +1,37 @@
+<html ng-app="countryApp">
+<head>
+<meta charset="utf-8" />
+<title>Sorting table columns interactively, Using ng-src</title>
+<script
+	src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+<script>
+	var countryApp = angular.module('countryApp', []);
+	countryApp.controller('CountryCtrl', ['$scope', '$http', function(scope, http) { //Put in an array is robust, work after "javascript minification"
+		http.get('countries.json') 
+		.success(function(data) { 
+			scope.countries = data;
+		});
+	
+		scope.sortField = 'population';
+		scope.reverse = true;
+	}]);
+</script>
+</head>
+<body ng-controller="CountryCtrl">
+	Search: <input ng-model="query" type="text"/>
+	<table>
+		<tr>
+			<th><a href="" ng-click="sortField = 'name'; reverse = !reverse">Country</a></th>
+			<th><a href="" ng-click="sortField = 'population';  reverse = !reverse">Population</a></th>
+			<th>Flag</th>
+		</tr>
+		<tr ng-repeat="country in countries | filter: query | orderBy: sortField: reverse" >
+			<td id="{{country.name}}">{{country.name}}</td>
+			<td>{{country.population}}</td>
+			
+			<!-- Using ng-src for dynamic src, in case of loading the source as template before the Angular Json got loaded -->
+			<td><img ng-src="{{country.flagURL}}" width="100"></img></td>
+		</tr>
+	</table>
+</body>
+</html>

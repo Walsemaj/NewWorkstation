@@ -1,0 +1,29 @@
+<html ng-app="countryApp">
+<head>
+<meta charset="utf-8" />
+<title>Another function declaration</title>
+<script
+	src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+<script>
+	var countryApp = angular.module('countryApp', []);
+	countryApp.controller('CountryCtrl', ['$scope', '$http', function(scope, http) { //Put in an array is robust, work after "javascript minification"
+		http.get('countries.json') 
+		.success(function(data) { 
+			scope.countries = data;
+		});
+	}]);
+</script>
+</head>
+<body ng-controller="CountryCtrl">
+	<table>
+		<tr>
+			<th>Country</th>
+			<th>Population</th>
+		</tr>
+		<tr ng-repeat="country in countries">
+			<td id="{{country.name}}">{{country.name}}</td>
+			<td>{{country.population}}</td>
+		</tr>
+	</table>
+</body>
+</html>
