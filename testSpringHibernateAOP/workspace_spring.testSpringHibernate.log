@@ -1,0 +1,1438 @@
+17:04:59,979  INFO ClassPathXmlApplicationContext:411 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]; startup date [Thu Mar 31 17:04:59 CST 2016]; root of context hierarchy
+17:05:00,025  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/config/BeanLocations.xml]
+17:05:00,142  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/DataSource.xml]
+17:05:00,177  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/Hibernate.xml]
+17:05:00,203  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/transaction.xml]
+17:05:00,225  INFO ClassPathXmlApplicationContext:426 - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@73035e27
+17:05:00,268  INFO PropertyPlaceholderConfigurer:178 - Loading properties file from class path resource [properties/database.properties]
+17:05:00,274  INFO DefaultListableBeanFactory:414 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@73035e27: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,transactionInterceptor,transactionManager]; root of factory hierarchy
+17:05:00,288  INFO DriverManagerDataSource:155 - Loaded JDBC driver: org.apache.derby.jdbc.ClientDriver
+17:05:00,318  INFO Environment:509 - Hibernate 3.2.3
+17:05:00,321  INFO Environment:542 - hibernate.properties not found
+17:05:00,324  INFO Environment:676 - Bytecode provider name : cglib
+17:05:00,327  INFO Environment:593 - using JDK 1.4 java.sql.Timestamp handling
+17:05:00,364  INFO LocalSessionFactoryBean:730 - Building new Hibernate SessionFactory
+17:05:00,366  INFO ConnectionProviderFactory:72 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+17:05:00,558  INFO SettingsFactory:89 - RDBMS: Apache Derby, version: 10.9.1.0 - (1344872)
+17:05:00,560  INFO SettingsFactory:90 - JDBC driver: Apache Derby Network Client JDBC Driver, version: 10.9.1.0 - (1344872)
+17:05:00,599  INFO Dialect:152 - Using dialect: org.hibernate.dialect.DerbyDialect
+17:05:00,620  INFO TransactionFactoryFactory:34 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+17:05:00,620  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+17:05:00,621  INFO SettingsFactory:143 - Automatic flush during beforeCompletion(): disabled
+17:05:00,621  INFO SettingsFactory:147 - Automatic session close at end of transaction: disabled
+17:05:00,621  INFO SettingsFactory:162 - Scrollable result sets: enabled
+17:05:00,621  INFO SettingsFactory:170 - JDBC3 getGeneratedKeys(): disabled
+17:05:00,621  INFO SettingsFactory:178 - Connection release mode: auto
+17:05:00,622  INFO SettingsFactory:205 - Default batch fetch size: 1
+17:05:00,622  INFO SettingsFactory:209 - Generate SQL with comments: disabled
+17:05:00,622  INFO SettingsFactory:213 - Order SQL updates by primary key: disabled
+17:05:00,622  INFO SettingsFactory:382 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+17:05:00,623  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+17:05:00,624  INFO SettingsFactory:221 - Query language substitutions: {}
+17:05:00,624  INFO SettingsFactory:226 - JPA-QL strict compliance: disabled
+17:05:00,624  INFO SettingsFactory:231 - Second-level cache: enabled
+17:05:00,624  INFO SettingsFactory:235 - Query cache: disabled
+17:05:00,624  INFO SettingsFactory:369 - Cache provider: org.hibernate.cache.NoCacheProvider
+17:05:00,624  INFO SettingsFactory:250 - Optimize cache for minimal puts: disabled
+17:05:00,625  INFO SettingsFactory:259 - Structured second-level cache entries: disabled
+17:05:00,627  INFO SettingsFactory:279 - Echoing all SQL to stdout
+17:05:00,627  INFO SettingsFactory:286 - Statistics: disabled
+17:05:00,627  INFO SettingsFactory:290 - Deleted entity synthetic identifier rollback: disabled
+17:05:00,628  INFO SettingsFactory:305 - Default entity-mode: pojo
+17:05:00,628  INFO SettingsFactory:309 - Named query checking : enabled
+17:05:00,649  INFO SessionFactoryImpl:161 - building session factory
+17:05:00,651  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+17:32:19,143  INFO ClassPathXmlApplicationContext:411 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]; startup date [Thu Mar 31 17:32:19 CST 2016]; root of context hierarchy
+17:32:19,189  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/config/BeanLocations.xml]
+17:32:19,302  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/DataSource.xml]
+17:32:19,342  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/Hibernate.xml]
+17:32:19,369  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/transaction.xml]
+17:32:19,390  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/customer.xml]
+17:32:19,417  INFO ClassPathXmlApplicationContext:426 - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922
+17:32:19,469  INFO PropertyPlaceholderConfigurer:178 - Loading properties file from class path resource [properties/database.properties]
+17:32:19,476  INFO DefaultListableBeanFactory:414 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,transactionInterceptor,transactionManager,customerDao]; root of factory hierarchy
+17:32:19,490  INFO DriverManagerDataSource:155 - Loaded JDBC driver: org.apache.derby.jdbc.ClientDriver
+17:32:19,538  INFO Environment:509 - Hibernate 3.2.3
+17:32:19,542  INFO Environment:542 - hibernate.properties not found
+17:32:19,544  INFO Environment:676 - Bytecode provider name : cglib
+17:32:19,547  INFO Environment:593 - using JDK 1.4 java.sql.Timestamp handling
+17:32:19,691  INFO HbmBinder:300 - Mapping class: com.test.testSpringHibernateAOP.customer.model.Customer -> customer
+17:32:19,703  INFO LocalSessionFactoryBean:730 - Building new Hibernate SessionFactory
+17:32:19,737  INFO ConnectionProviderFactory:72 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+17:32:19,906  INFO SettingsFactory:89 - RDBMS: Apache Derby, version: 10.9.1.0 - (1344872)
+17:32:19,906  INFO SettingsFactory:90 - JDBC driver: Apache Derby Network Client JDBC Driver, version: 10.9.1.0 - (1344872)
+17:32:19,943  INFO Dialect:152 - Using dialect: org.hibernate.dialect.DerbyDialect
+17:32:19,946  INFO TransactionFactoryFactory:34 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+17:32:19,946  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+17:32:19,947  INFO SettingsFactory:143 - Automatic flush during beforeCompletion(): disabled
+17:32:19,947  INFO SettingsFactory:147 - Automatic session close at end of transaction: disabled
+17:32:19,947  INFO SettingsFactory:162 - Scrollable result sets: enabled
+17:32:19,947  INFO SettingsFactory:170 - JDBC3 getGeneratedKeys(): disabled
+17:32:19,947  INFO SettingsFactory:178 - Connection release mode: auto
+17:32:19,948  INFO SettingsFactory:205 - Default batch fetch size: 1
+17:32:19,948  INFO SettingsFactory:209 - Generate SQL with comments: disabled
+17:32:19,949  INFO SettingsFactory:213 - Order SQL updates by primary key: disabled
+17:32:19,949  INFO SettingsFactory:382 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+17:32:19,950  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+17:32:19,950  INFO SettingsFactory:221 - Query language substitutions: {}
+17:32:19,950  INFO SettingsFactory:226 - JPA-QL strict compliance: disabled
+17:32:19,951  INFO SettingsFactory:231 - Second-level cache: enabled
+17:32:19,951  INFO SettingsFactory:235 - Query cache: disabled
+17:32:19,951  INFO SettingsFactory:369 - Cache provider: org.hibernate.cache.NoCacheProvider
+17:32:19,951  INFO SettingsFactory:250 - Optimize cache for minimal puts: disabled
+17:32:19,951  INFO SettingsFactory:259 - Structured second-level cache entries: disabled
+17:32:19,954  INFO SettingsFactory:279 - Echoing all SQL to stdout
+17:32:19,954  INFO SettingsFactory:286 - Statistics: disabled
+17:32:19,954  INFO SettingsFactory:290 - Deleted entity synthetic identifier rollback: disabled
+17:32:19,954  INFO SettingsFactory:305 - Default entity-mode: pojo
+17:32:19,954  INFO SettingsFactory:309 - Named query checking : enabled
+17:32:19,979  INFO SessionFactoryImpl:161 - building session factory
+17:32:20,025  INFO PojoInstantiator:61 - no default (no-argument) constructor for class: com.test.testSpringHibernateAOP.customer.model.Customer (class must be instantiated by Interceptor)
+17:32:20,106  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+17:32:20,129  INFO DefaultListableBeanFactory:421 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,transactionInterceptor,transactionManager,customerDao]; root of factory hierarchy
+17:32:20,129  INFO LocalSessionFactoryBean:246 - Closing Hibernate SessionFactory
+17:32:20,129  INFO SessionFactoryImpl:769 - closing
+17:32:57,296  INFO ClassPathXmlApplicationContext:411 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]; startup date [Thu Mar 31 17:32:57 CST 2016]; root of context hierarchy
+17:32:57,341  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/config/BeanLocations.xml]
+17:32:57,454  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/DataSource.xml]
+17:32:57,491  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/Hibernate.xml]
+17:32:57,523  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/transaction.xml]
+17:32:57,548  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/customer.xml]
+17:32:57,581  INFO ClassPathXmlApplicationContext:426 - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922
+17:32:57,646  INFO PropertyPlaceholderConfigurer:178 - Loading properties file from class path resource [properties/database.properties]
+17:32:57,656  INFO DefaultListableBeanFactory:414 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,transactionInterceptor,transactionManager,customerDao]; root of factory hierarchy
+17:32:57,671  INFO DriverManagerDataSource:155 - Loaded JDBC driver: org.apache.derby.jdbc.ClientDriver
+17:32:57,720  INFO Environment:509 - Hibernate 3.2.3
+17:32:57,723  INFO Environment:542 - hibernate.properties not found
+17:32:57,725  INFO Environment:676 - Bytecode provider name : cglib
+17:32:57,729  INFO Environment:593 - using JDK 1.4 java.sql.Timestamp handling
+17:32:57,866  INFO HbmBinder:300 - Mapping class: com.test.testSpringHibernateAOP.customer.model.Customer -> customer
+17:32:57,879  INFO LocalSessionFactoryBean:730 - Building new Hibernate SessionFactory
+17:32:57,914  INFO ConnectionProviderFactory:72 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+17:32:58,085  INFO SettingsFactory:89 - RDBMS: Apache Derby, version: 10.9.1.0 - (1344872)
+17:32:58,086  INFO SettingsFactory:90 - JDBC driver: Apache Derby Network Client JDBC Driver, version: 10.9.1.0 - (1344872)
+17:32:58,119  INFO Dialect:152 - Using dialect: org.hibernate.dialect.DerbyDialect
+17:32:58,122  INFO TransactionFactoryFactory:34 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+17:32:58,123  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+17:32:58,123  INFO SettingsFactory:143 - Automatic flush during beforeCompletion(): disabled
+17:32:58,123  INFO SettingsFactory:147 - Automatic session close at end of transaction: disabled
+17:32:58,123  INFO SettingsFactory:162 - Scrollable result sets: enabled
+17:32:58,124  INFO SettingsFactory:170 - JDBC3 getGeneratedKeys(): disabled
+17:32:58,124  INFO SettingsFactory:178 - Connection release mode: auto
+17:32:58,124  INFO SettingsFactory:205 - Default batch fetch size: 1
+17:32:58,125  INFO SettingsFactory:209 - Generate SQL with comments: disabled
+17:32:58,125  INFO SettingsFactory:213 - Order SQL updates by primary key: disabled
+17:32:58,125  INFO SettingsFactory:382 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+17:32:58,126  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+17:32:58,126  INFO SettingsFactory:221 - Query language substitutions: {}
+17:32:58,127  INFO SettingsFactory:226 - JPA-QL strict compliance: disabled
+17:32:58,127  INFO SettingsFactory:231 - Second-level cache: enabled
+17:32:58,127  INFO SettingsFactory:235 - Query cache: disabled
+17:32:58,127  INFO SettingsFactory:369 - Cache provider: org.hibernate.cache.NoCacheProvider
+17:32:58,127  INFO SettingsFactory:250 - Optimize cache for minimal puts: disabled
+17:32:58,127  INFO SettingsFactory:259 - Structured second-level cache entries: disabled
+17:32:58,130  INFO SettingsFactory:279 - Echoing all SQL to stdout
+17:32:58,130  INFO SettingsFactory:286 - Statistics: disabled
+17:32:58,130  INFO SettingsFactory:290 - Deleted entity synthetic identifier rollback: disabled
+17:32:58,130  INFO SettingsFactory:305 - Default entity-mode: pojo
+17:32:58,130  INFO SettingsFactory:309 - Named query checking : enabled
+17:32:58,149  INFO SessionFactoryImpl:161 - building session factory
+17:32:58,194  INFO PojoInstantiator:61 - no default (no-argument) constructor for class: com.test.testSpringHibernateAOP.customer.model.Customer (class must be instantiated by Interceptor)
+17:32:58,278  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+17:32:58,345 TRACE StringType:133 - binding 'Cotton' to parameter: 1
+17:32:58,346 TRACE LongType:133 - binding '3' to parameter: 2
+17:34:27,767  INFO ClassPathXmlApplicationContext:411 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]; startup date [Thu Mar 31 17:34:27 CST 2016]; root of context hierarchy
+17:34:27,813  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/config/BeanLocations.xml]
+17:34:27,933  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/DataSource.xml]
+17:34:27,976  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/Hibernate.xml]
+17:34:28,007  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/transaction.xml]
+17:34:28,030  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/customer.xml]
+17:34:28,052  INFO ClassPathXmlApplicationContext:426 - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922
+17:34:28,117  INFO PropertyPlaceholderConfigurer:178 - Loading properties file from class path resource [properties/database.properties]
+17:34:28,125  INFO DefaultListableBeanFactory:414 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,transactionInterceptor,transactionManager,customerDao]; root of factory hierarchy
+17:34:28,140  INFO DriverManagerDataSource:155 - Loaded JDBC driver: org.apache.derby.jdbc.ClientDriver
+17:34:28,187  INFO Environment:509 - Hibernate 3.2.3
+17:34:28,190  INFO Environment:542 - hibernate.properties not found
+17:34:28,192  INFO Environment:676 - Bytecode provider name : cglib
+17:34:28,195  INFO Environment:593 - using JDK 1.4 java.sql.Timestamp handling
+17:34:28,336  INFO HbmBinder:300 - Mapping class: com.test.testSpringHibernateAOP.customer.model.Customer -> customer
+17:34:28,349  INFO LocalSessionFactoryBean:730 - Building new Hibernate SessionFactory
+17:34:28,391  INFO ConnectionProviderFactory:72 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+17:34:28,554  INFO SettingsFactory:89 - RDBMS: Apache Derby, version: 10.9.1.0 - (1344872)
+17:34:28,554  INFO SettingsFactory:90 - JDBC driver: Apache Derby Network Client JDBC Driver, version: 10.9.1.0 - (1344872)
+17:34:28,590  INFO Dialect:152 - Using dialect: org.hibernate.dialect.DerbyDialect
+17:34:28,593  INFO TransactionFactoryFactory:34 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+17:34:28,593  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+17:34:28,593  INFO SettingsFactory:143 - Automatic flush during beforeCompletion(): disabled
+17:34:28,594  INFO SettingsFactory:147 - Automatic session close at end of transaction: disabled
+17:34:28,594  INFO SettingsFactory:162 - Scrollable result sets: enabled
+17:34:28,594  INFO SettingsFactory:170 - JDBC3 getGeneratedKeys(): disabled
+17:34:28,594  INFO SettingsFactory:178 - Connection release mode: auto
+17:34:28,595  INFO SettingsFactory:205 - Default batch fetch size: 1
+17:34:28,595  INFO SettingsFactory:209 - Generate SQL with comments: disabled
+17:34:28,595  INFO SettingsFactory:213 - Order SQL updates by primary key: disabled
+17:34:28,595  INFO SettingsFactory:382 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+17:34:28,597  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+17:34:28,598  INFO SettingsFactory:221 - Query language substitutions: {}
+17:34:28,598  INFO SettingsFactory:226 - JPA-QL strict compliance: disabled
+17:34:28,598  INFO SettingsFactory:231 - Second-level cache: enabled
+17:34:28,599  INFO SettingsFactory:235 - Query cache: disabled
+17:34:28,599  INFO SettingsFactory:369 - Cache provider: org.hibernate.cache.NoCacheProvider
+17:34:28,599  INFO SettingsFactory:250 - Optimize cache for minimal puts: disabled
+17:34:28,599  INFO SettingsFactory:259 - Structured second-level cache entries: disabled
+17:34:28,603  INFO SettingsFactory:279 - Echoing all SQL to stdout
+17:34:28,603  INFO SettingsFactory:286 - Statistics: disabled
+17:34:28,603  INFO SettingsFactory:290 - Deleted entity synthetic identifier rollback: disabled
+17:34:28,603  INFO SettingsFactory:305 - Default entity-mode: pojo
+17:34:28,604  INFO SettingsFactory:309 - Named query checking : enabled
+17:34:28,624  INFO SessionFactoryImpl:161 - building session factory
+17:34:28,671  INFO PojoInstantiator:61 - no default (no-argument) constructor for class: com.test.testSpringHibernateAOP.customer.model.Customer (class must be instantiated by Interceptor)
+17:34:28,752  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+17:34:28,816 TRACE StringType:133 - binding 'Cotton' to parameter: 1
+17:34:28,817 TRACE LongType:133 - binding '3' to parameter: 2
+17:36:07,670  INFO ClassPathXmlApplicationContext:411 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]; startup date [Thu Mar 31 17:36:07 CST 2016]; root of context hierarchy
+17:36:07,717  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/config/BeanLocations.xml]
+17:36:07,838  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/DataSource.xml]
+17:36:07,876  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/Hibernate.xml]
+17:36:07,902  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/transaction.xml]
+17:36:07,926  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/customer.xml]
+17:36:07,954  INFO ClassPathXmlApplicationContext:426 - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922
+17:36:08,008  INFO PropertyPlaceholderConfigurer:178 - Loading properties file from class path resource [properties/database.properties]
+17:36:08,016  INFO DefaultListableBeanFactory:414 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,transactionInterceptor,transactionManager,customerDao]; root of factory hierarchy
+17:36:08,033  INFO DriverManagerDataSource:155 - Loaded JDBC driver: org.apache.derby.jdbc.ClientDriver
+17:36:08,082  INFO Environment:509 - Hibernate 3.2.3
+17:36:08,085  INFO Environment:542 - hibernate.properties not found
+17:36:08,087  INFO Environment:676 - Bytecode provider name : cglib
+17:36:08,090  INFO Environment:593 - using JDK 1.4 java.sql.Timestamp handling
+17:36:08,226  INFO HbmBinder:300 - Mapping class: com.test.testSpringHibernateAOP.customer.model.Customer -> customer
+17:36:08,235  INFO LocalSessionFactoryBean:730 - Building new Hibernate SessionFactory
+17:36:08,279  INFO ConnectionProviderFactory:72 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+17:36:08,445  INFO SettingsFactory:89 - RDBMS: Apache Derby, version: 10.9.1.0 - (1344872)
+17:36:08,445  INFO SettingsFactory:90 - JDBC driver: Apache Derby Network Client JDBC Driver, version: 10.9.1.0 - (1344872)
+17:36:08,479  INFO Dialect:152 - Using dialect: org.hibernate.dialect.DerbyDialect
+17:36:08,482  INFO TransactionFactoryFactory:34 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+17:36:08,482  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+17:36:08,482  INFO SettingsFactory:143 - Automatic flush during beforeCompletion(): disabled
+17:36:08,483  INFO SettingsFactory:147 - Automatic session close at end of transaction: disabled
+17:36:08,483  INFO SettingsFactory:162 - Scrollable result sets: enabled
+17:36:08,483  INFO SettingsFactory:170 - JDBC3 getGeneratedKeys(): disabled
+17:36:08,483  INFO SettingsFactory:178 - Connection release mode: auto
+17:36:08,484  INFO SettingsFactory:205 - Default batch fetch size: 1
+17:36:08,484  INFO SettingsFactory:209 - Generate SQL with comments: disabled
+17:36:08,485  INFO SettingsFactory:213 - Order SQL updates by primary key: disabled
+17:36:08,485  INFO SettingsFactory:382 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+17:36:08,486  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+17:36:08,487  INFO SettingsFactory:221 - Query language substitutions: {}
+17:36:08,487  INFO SettingsFactory:226 - JPA-QL strict compliance: disabled
+17:36:08,487  INFO SettingsFactory:231 - Second-level cache: enabled
+17:36:08,487  INFO SettingsFactory:235 - Query cache: disabled
+17:36:08,487  INFO SettingsFactory:369 - Cache provider: org.hibernate.cache.NoCacheProvider
+17:36:08,488  INFO SettingsFactory:250 - Optimize cache for minimal puts: disabled
+17:36:08,488  INFO SettingsFactory:259 - Structured second-level cache entries: disabled
+17:36:08,490  INFO SettingsFactory:279 - Echoing all SQL to stdout
+17:36:08,490  INFO SettingsFactory:286 - Statistics: disabled
+17:36:08,490  INFO SettingsFactory:290 - Deleted entity synthetic identifier rollback: disabled
+17:36:08,491  INFO SettingsFactory:305 - Default entity-mode: pojo
+17:36:08,491  INFO SettingsFactory:309 - Named query checking : enabled
+17:36:08,510  INFO SessionFactoryImpl:161 - building session factory
+17:36:08,556  INFO PojoInstantiator:61 - no default (no-argument) constructor for class: com.test.testSpringHibernateAOP.customer.model.Customer (class must be instantiated by Interceptor)
+17:36:08,638  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+17:36:08,700 TRACE StringType:133 - binding 'Cotton' to parameter: 1
+17:36:08,701 TRACE LongType:133 - binding '3' to parameter: 2
+17:59:33,371  INFO ClassPathXmlApplicationContext:411 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]; startup date [Thu Mar 31 17:59:33 CST 2016]; root of context hierarchy
+17:59:33,419  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/config/BeanLocations.xml]
+17:59:33,539  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/DataSource.xml]
+17:59:33,578  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/Hibernate.xml]
+17:59:33,607  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/transaction.xml]
+17:59:33,629  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/customer.xml]
+17:59:33,657  INFO ClassPathXmlApplicationContext:426 - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922
+17:59:33,718  INFO PropertyPlaceholderConfigurer:178 - Loading properties file from class path resource [properties/database.properties]
+17:59:33,728  INFO DefaultListableBeanFactory:414 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,transactionInterceptor,transactionManager,customerDao,customerMethodInterceptor,customerPointcutAdvisor,customerDaoProxy]; root of factory hierarchy
+17:59:33,741  INFO DriverManagerDataSource:155 - Loaded JDBC driver: org.apache.derby.jdbc.ClientDriver
+17:59:33,795  INFO Environment:509 - Hibernate 3.2.3
+17:59:33,797  INFO Environment:542 - hibernate.properties not found
+17:59:33,800  INFO Environment:676 - Bytecode provider name : cglib
+17:59:33,802  INFO Environment:593 - using JDK 1.4 java.sql.Timestamp handling
+17:59:33,932  INFO HbmBinder:300 - Mapping class: com.test.testSpringHibernateAOP.customer.model.Customer -> customer
+17:59:33,945  INFO LocalSessionFactoryBean:730 - Building new Hibernate SessionFactory
+17:59:33,990  INFO ConnectionProviderFactory:72 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+17:59:34,155  INFO SettingsFactory:89 - RDBMS: Apache Derby, version: 10.9.1.0 - (1344872)
+17:59:34,155  INFO SettingsFactory:90 - JDBC driver: Apache Derby Network Client JDBC Driver, version: 10.9.1.0 - (1344872)
+17:59:34,189  INFO Dialect:152 - Using dialect: org.hibernate.dialect.DerbyDialect
+17:59:34,192  INFO TransactionFactoryFactory:34 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+17:59:34,193  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+17:59:34,193  INFO SettingsFactory:143 - Automatic flush during beforeCompletion(): disabled
+17:59:34,193  INFO SettingsFactory:147 - Automatic session close at end of transaction: disabled
+17:59:34,194  INFO SettingsFactory:162 - Scrollable result sets: enabled
+17:59:34,194  INFO SettingsFactory:170 - JDBC3 getGeneratedKeys(): disabled
+17:59:34,194  INFO SettingsFactory:178 - Connection release mode: auto
+17:59:34,195  INFO SettingsFactory:205 - Default batch fetch size: 1
+17:59:34,195  INFO SettingsFactory:209 - Generate SQL with comments: disabled
+17:59:34,195  INFO SettingsFactory:213 - Order SQL updates by primary key: disabled
+17:59:34,195  INFO SettingsFactory:382 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+17:59:34,196  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+17:59:34,197  INFO SettingsFactory:221 - Query language substitutions: {}
+17:59:34,197  INFO SettingsFactory:226 - JPA-QL strict compliance: disabled
+17:59:34,197  INFO SettingsFactory:231 - Second-level cache: enabled
+17:59:34,197  INFO SettingsFactory:235 - Query cache: disabled
+17:59:34,197  INFO SettingsFactory:369 - Cache provider: org.hibernate.cache.NoCacheProvider
+17:59:34,197  INFO SettingsFactory:250 - Optimize cache for minimal puts: disabled
+17:59:34,198  INFO SettingsFactory:259 - Structured second-level cache entries: disabled
+17:59:34,200  INFO SettingsFactory:279 - Echoing all SQL to stdout
+17:59:34,200  INFO SettingsFactory:286 - Statistics: disabled
+17:59:34,200  INFO SettingsFactory:290 - Deleted entity synthetic identifier rollback: disabled
+17:59:34,200  INFO SettingsFactory:305 - Default entity-mode: pojo
+17:59:34,200  INFO SettingsFactory:309 - Named query checking : enabled
+17:59:34,220  INFO SessionFactoryImpl:161 - building session factory
+17:59:34,268  INFO PojoInstantiator:61 - no default (no-argument) constructor for class: com.test.testSpringHibernateAOP.customer.model.Customer (class must be instantiated by Interceptor)
+17:59:34,349  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+17:59:34,376  INFO DefaultListableBeanFactory:421 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,transactionInterceptor,transactionManager,customerDao,customerMethodInterceptor,customerPointcutAdvisor,customerDaoProxy]; root of factory hierarchy
+17:59:34,377  INFO LocalSessionFactoryBean:246 - Closing Hibernate SessionFactory
+17:59:34,377  INFO SessionFactoryImpl:769 - closing
+17:59:58,385  INFO ClassPathXmlApplicationContext:411 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]; startup date [Thu Mar 31 17:59:58 CST 2016]; root of context hierarchy
+17:59:58,432  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/config/BeanLocations.xml]
+17:59:58,543  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/DataSource.xml]
+17:59:58,580  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/Hibernate.xml]
+17:59:58,609  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/transaction.xml]
+17:59:58,631  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/customer.xml]
+17:59:58,667  INFO ClassPathXmlApplicationContext:426 - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922
+17:59:58,732  INFO PropertyPlaceholderConfigurer:178 - Loading properties file from class path resource [properties/database.properties]
+17:59:58,740  INFO DefaultListableBeanFactory:414 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,transactionInterceptor,transactionManager,customerDao,customerMethodInterceptor,customerPointcutAdvisor,customerDaoProxy]; root of factory hierarchy
+17:59:58,756  INFO DriverManagerDataSource:155 - Loaded JDBC driver: org.apache.derby.jdbc.ClientDriver
+17:59:58,805  INFO Environment:509 - Hibernate 3.2.3
+17:59:58,808  INFO Environment:542 - hibernate.properties not found
+17:59:58,810  INFO Environment:676 - Bytecode provider name : cglib
+17:59:58,814  INFO Environment:593 - using JDK 1.4 java.sql.Timestamp handling
+17:59:58,958  INFO HbmBinder:300 - Mapping class: com.test.testSpringHibernateAOP.customer.model.Customer -> customer
+17:59:58,973  INFO LocalSessionFactoryBean:730 - Building new Hibernate SessionFactory
+17:59:59,018  INFO ConnectionProviderFactory:72 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+17:59:59,179  INFO SettingsFactory:89 - RDBMS: Apache Derby, version: 10.9.1.0 - (1344872)
+17:59:59,179  INFO SettingsFactory:90 - JDBC driver: Apache Derby Network Client JDBC Driver, version: 10.9.1.0 - (1344872)
+17:59:59,213  INFO Dialect:152 - Using dialect: org.hibernate.dialect.DerbyDialect
+17:59:59,217  INFO TransactionFactoryFactory:34 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+17:59:59,218  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+17:59:59,218  INFO SettingsFactory:143 - Automatic flush during beforeCompletion(): disabled
+17:59:59,218  INFO SettingsFactory:147 - Automatic session close at end of transaction: disabled
+17:59:59,218  INFO SettingsFactory:162 - Scrollable result sets: enabled
+17:59:59,219  INFO SettingsFactory:170 - JDBC3 getGeneratedKeys(): disabled
+17:59:59,219  INFO SettingsFactory:178 - Connection release mode: auto
+17:59:59,219  INFO SettingsFactory:205 - Default batch fetch size: 1
+17:59:59,219  INFO SettingsFactory:209 - Generate SQL with comments: disabled
+17:59:59,220  INFO SettingsFactory:213 - Order SQL updates by primary key: disabled
+17:59:59,220  INFO SettingsFactory:382 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+17:59:59,221  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+17:59:59,221  INFO SettingsFactory:221 - Query language substitutions: {}
+17:59:59,221  INFO SettingsFactory:226 - JPA-QL strict compliance: disabled
+17:59:59,222  INFO SettingsFactory:231 - Second-level cache: enabled
+17:59:59,222  INFO SettingsFactory:235 - Query cache: disabled
+17:59:59,222  INFO SettingsFactory:369 - Cache provider: org.hibernate.cache.NoCacheProvider
+17:59:59,222  INFO SettingsFactory:250 - Optimize cache for minimal puts: disabled
+17:59:59,222  INFO SettingsFactory:259 - Structured second-level cache entries: disabled
+17:59:59,225  INFO SettingsFactory:279 - Echoing all SQL to stdout
+17:59:59,225  INFO SettingsFactory:286 - Statistics: disabled
+17:59:59,225  INFO SettingsFactory:290 - Deleted entity synthetic identifier rollback: disabled
+17:59:59,225  INFO SettingsFactory:305 - Default entity-mode: pojo
+17:59:59,225  INFO SettingsFactory:309 - Named query checking : enabled
+17:59:59,247  INFO SessionFactoryImpl:161 - building session factory
+17:59:59,290  INFO PojoInstantiator:61 - no default (no-argument) constructor for class: com.test.testSpringHibernateAOP.customer.model.Customer (class must be instantiated by Interceptor)
+17:59:59,382  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+17:59:59,462 TRACE StringType:133 - binding 'Cotton' to parameter: 1
+17:59:59,463 TRACE LongType:133 - binding '3' to parameter: 2
+18:00:58,960  INFO ClassPathXmlApplicationContext:411 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]; startup date [Thu Mar 31 18:00:58 CST 2016]; root of context hierarchy
+18:00:59,014  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/config/BeanLocations.xml]
+18:00:59,128  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/DataSource.xml]
+18:00:59,168  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/Hibernate.xml]
+18:00:59,198  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/transaction.xml]
+18:00:59,223  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/customer.xml]
+18:00:59,251  INFO ClassPathXmlApplicationContext:426 - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922
+18:00:59,321  INFO PropertyPlaceholderConfigurer:178 - Loading properties file from class path resource [properties/database.properties]
+18:00:59,333  INFO DefaultListableBeanFactory:414 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,transactionInterceptor,transactionManager,customerDao,customerMethodInterceptor,customerPointcutAdvisor,customerDaoProxy]; root of factory hierarchy
+18:00:59,354  INFO DriverManagerDataSource:155 - Loaded JDBC driver: org.apache.derby.jdbc.ClientDriver
+18:00:59,407  INFO Environment:509 - Hibernate 3.2.3
+18:00:59,411  INFO Environment:542 - hibernate.properties not found
+18:00:59,413  INFO Environment:676 - Bytecode provider name : cglib
+18:00:59,416  INFO Environment:593 - using JDK 1.4 java.sql.Timestamp handling
+18:00:59,550  INFO HbmBinder:300 - Mapping class: com.test.testSpringHibernateAOP.customer.model.Customer -> customer
+18:00:59,563  INFO LocalSessionFactoryBean:730 - Building new Hibernate SessionFactory
+18:00:59,610  INFO ConnectionProviderFactory:72 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+18:00:59,783  INFO SettingsFactory:89 - RDBMS: Apache Derby, version: 10.9.1.0 - (1344872)
+18:00:59,784  INFO SettingsFactory:90 - JDBC driver: Apache Derby Network Client JDBC Driver, version: 10.9.1.0 - (1344872)
+18:00:59,818  INFO Dialect:152 - Using dialect: org.hibernate.dialect.DerbyDialect
+18:00:59,823  INFO TransactionFactoryFactory:34 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+18:00:59,824  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+18:00:59,824  INFO SettingsFactory:143 - Automatic flush during beforeCompletion(): disabled
+18:00:59,824  INFO SettingsFactory:147 - Automatic session close at end of transaction: disabled
+18:00:59,825  INFO SettingsFactory:162 - Scrollable result sets: enabled
+18:00:59,825  INFO SettingsFactory:170 - JDBC3 getGeneratedKeys(): disabled
+18:00:59,825  INFO SettingsFactory:178 - Connection release mode: auto
+18:00:59,826  INFO SettingsFactory:205 - Default batch fetch size: 1
+18:00:59,826  INFO SettingsFactory:209 - Generate SQL with comments: disabled
+18:00:59,826  INFO SettingsFactory:213 - Order SQL updates by primary key: disabled
+18:00:59,826  INFO SettingsFactory:382 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+18:00:59,828  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+18:00:59,828  INFO SettingsFactory:221 - Query language substitutions: {}
+18:00:59,828  INFO SettingsFactory:226 - JPA-QL strict compliance: disabled
+18:00:59,828  INFO SettingsFactory:231 - Second-level cache: enabled
+18:00:59,828  INFO SettingsFactory:235 - Query cache: disabled
+18:00:59,828  INFO SettingsFactory:369 - Cache provider: org.hibernate.cache.NoCacheProvider
+18:00:59,829  INFO SettingsFactory:250 - Optimize cache for minimal puts: disabled
+18:00:59,829  INFO SettingsFactory:259 - Structured second-level cache entries: disabled
+18:00:59,831  INFO SettingsFactory:279 - Echoing all SQL to stdout
+18:00:59,831  INFO SettingsFactory:286 - Statistics: disabled
+18:00:59,831  INFO SettingsFactory:290 - Deleted entity synthetic identifier rollback: disabled
+18:00:59,832  INFO SettingsFactory:305 - Default entity-mode: pojo
+18:00:59,832  INFO SettingsFactory:309 - Named query checking : enabled
+18:00:59,852  INFO SessionFactoryImpl:161 - building session factory
+18:00:59,898  INFO PojoInstantiator:61 - no default (no-argument) constructor for class: com.test.testSpringHibernateAOP.customer.model.Customer (class must be instantiated by Interceptor)
+18:00:59,979  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+18:01:00,059 TRACE StringType:133 - binding 'Cotton' to parameter: 1
+18:01:00,061 TRACE LongType:133 - binding '3' to parameter: 2
+18:03:22,734  INFO ClassPathXmlApplicationContext:411 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]; startup date [Thu Mar 31 18:03:22 CST 2016]; root of context hierarchy
+18:03:22,781  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/config/BeanLocations.xml]
+18:03:22,913  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/DataSource.xml]
+18:03:22,955  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/Hibernate.xml]
+18:03:22,983  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/transaction.xml]
+18:03:23,008  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/customer.xml]
+18:03:23,045  INFO ClassPathXmlApplicationContext:426 - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922
+18:03:23,111  INFO PropertyPlaceholderConfigurer:178 - Loading properties file from class path resource [properties/database.properties]
+18:03:23,122  INFO DefaultListableBeanFactory:414 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,transactionInterceptor,transactionManager,customerDao,customerMethodInterceptor,customerPointcutAdvisor,customerDaoProxy]; root of factory hierarchy
+18:03:23,141  INFO DriverManagerDataSource:155 - Loaded JDBC driver: org.apache.derby.jdbc.ClientDriver
+18:03:23,193  INFO Environment:509 - Hibernate 3.2.3
+18:03:23,199  INFO Environment:542 - hibernate.properties not found
+18:03:23,202  INFO Environment:676 - Bytecode provider name : cglib
+18:03:23,205  INFO Environment:593 - using JDK 1.4 java.sql.Timestamp handling
+18:03:23,367  INFO HbmBinder:300 - Mapping class: com.test.testSpringHibernateAOP.customer.model.Customer -> customer
+18:03:23,379  INFO LocalSessionFactoryBean:730 - Building new Hibernate SessionFactory
+18:03:23,427  INFO ConnectionProviderFactory:72 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+18:03:23,610  INFO SettingsFactory:89 - RDBMS: Apache Derby, version: 10.9.1.0 - (1344872)
+18:03:23,610  INFO SettingsFactory:90 - JDBC driver: Apache Derby Network Client JDBC Driver, version: 10.9.1.0 - (1344872)
+18:03:23,654  INFO Dialect:152 - Using dialect: org.hibernate.dialect.DerbyDialect
+18:03:23,659  INFO TransactionFactoryFactory:34 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+18:03:23,660  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+18:03:23,661  INFO SettingsFactory:143 - Automatic flush during beforeCompletion(): disabled
+18:03:23,661  INFO SettingsFactory:147 - Automatic session close at end of transaction: disabled
+18:03:23,662  INFO SettingsFactory:162 - Scrollable result sets: enabled
+18:03:23,662  INFO SettingsFactory:170 - JDBC3 getGeneratedKeys(): disabled
+18:03:23,662  INFO SettingsFactory:178 - Connection release mode: auto
+18:03:23,663  INFO SettingsFactory:205 - Default batch fetch size: 1
+18:03:23,664  INFO SettingsFactory:209 - Generate SQL with comments: disabled
+18:03:23,664  INFO SettingsFactory:213 - Order SQL updates by primary key: disabled
+18:03:23,664  INFO SettingsFactory:382 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+18:03:23,666  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+18:03:23,666  INFO SettingsFactory:221 - Query language substitutions: {}
+18:03:23,666  INFO SettingsFactory:226 - JPA-QL strict compliance: disabled
+18:03:23,667  INFO SettingsFactory:231 - Second-level cache: enabled
+18:03:23,667  INFO SettingsFactory:235 - Query cache: disabled
+18:03:23,667  INFO SettingsFactory:369 - Cache provider: org.hibernate.cache.NoCacheProvider
+18:03:23,667  INFO SettingsFactory:250 - Optimize cache for minimal puts: disabled
+18:03:23,667  INFO SettingsFactory:259 - Structured second-level cache entries: disabled
+18:03:23,670  INFO SettingsFactory:279 - Echoing all SQL to stdout
+18:03:23,670  INFO SettingsFactory:286 - Statistics: disabled
+18:03:23,670  INFO SettingsFactory:290 - Deleted entity synthetic identifier rollback: disabled
+18:03:23,671  INFO SettingsFactory:305 - Default entity-mode: pojo
+18:03:23,671  INFO SettingsFactory:309 - Named query checking : enabled
+18:03:23,699  INFO SessionFactoryImpl:161 - building session factory
+18:03:23,767  INFO PojoInstantiator:61 - no default (no-argument) constructor for class: com.test.testSpringHibernateAOP.customer.model.Customer (class must be instantiated by Interceptor)
+18:03:23,869  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+18:03:23,977 TRACE StringType:133 - binding 'Cotton' to parameter: 1
+18:03:23,978 TRACE LongType:133 - binding '3' to parameter: 2
+18:11:42,601  INFO ClassPathXmlApplicationContext:411 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]; startup date [Thu Mar 31 18:11:42 CST 2016]; root of context hierarchy
+18:11:42,653  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/config/BeanLocations_ClassIntercepted]
+18:12:52,306  INFO ClassPathXmlApplicationContext:411 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]; startup date [Thu Mar 31 18:12:52 CST 2016]; root of context hierarchy
+18:12:52,352  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/config/BeanLocations_ClassIntercepted]
+18:13:28,323  INFO ClassPathXmlApplicationContext:411 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]; startup date [Thu Mar 31 18:13:28 CST 2016]; root of context hierarchy
+18:13:28,370  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/config/BeanLocations_MethodPointcutAdvisor]
+18:13:55,430  INFO ClassPathXmlApplicationContext:411 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]; startup date [Thu Mar 31 18:13:55 CST 2016]; root of context hierarchy
+18:13:55,477  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/config/BeanLocations_MethodPointcutAdvisor.xml]
+18:13:55,588  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/DataSource.xml]
+18:13:55,627  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/Hibernate.xml]
+18:13:55,652  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/transaction.xml]
+18:13:55,676  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/customer_MethodPointcutAdvisor.xml]
+18:13:55,709  INFO ClassPathXmlApplicationContext:426 - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922
+18:13:55,756  INFO PropertyPlaceholderConfigurer:178 - Loading properties file from class path resource [properties/database.properties]
+18:13:55,763  INFO DefaultListableBeanFactory:414 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,transactionInterceptor,transactionManager,customerDao,customerMethodInterceptor,customerPointcutAdvisor,customerDaoProxy]; root of factory hierarchy
+18:13:55,776  INFO DriverManagerDataSource:155 - Loaded JDBC driver: org.apache.derby.jdbc.ClientDriver
+18:13:55,814  INFO Environment:509 - Hibernate 3.2.3
+18:13:55,818  INFO Environment:542 - hibernate.properties not found
+18:13:55,820  INFO Environment:676 - Bytecode provider name : cglib
+18:13:55,824  INFO Environment:593 - using JDK 1.4 java.sql.Timestamp handling
+18:13:55,962  INFO HbmBinder:300 - Mapping class: com.test.testSpringHibernateAOP.customer.model.Customer -> customer
+18:13:55,969  INFO LocalSessionFactoryBean:730 - Building new Hibernate SessionFactory
+18:13:56,004  INFO ConnectionProviderFactory:72 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+18:13:56,170  INFO SettingsFactory:89 - RDBMS: Apache Derby, version: 10.9.1.0 - (1344872)
+18:13:56,170  INFO SettingsFactory:90 - JDBC driver: Apache Derby Network Client JDBC Driver, version: 10.9.1.0 - (1344872)
+18:13:56,204  INFO Dialect:152 - Using dialect: org.hibernate.dialect.DerbyDialect
+18:13:56,207  INFO TransactionFactoryFactory:34 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+18:13:56,208  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+18:13:56,208  INFO SettingsFactory:143 - Automatic flush during beforeCompletion(): disabled
+18:13:56,208  INFO SettingsFactory:147 - Automatic session close at end of transaction: disabled
+18:13:56,209  INFO SettingsFactory:162 - Scrollable result sets: enabled
+18:13:56,209  INFO SettingsFactory:170 - JDBC3 getGeneratedKeys(): disabled
+18:13:56,209  INFO SettingsFactory:178 - Connection release mode: auto
+18:13:56,210  INFO SettingsFactory:205 - Default batch fetch size: 1
+18:13:56,210  INFO SettingsFactory:209 - Generate SQL with comments: disabled
+18:13:56,210  INFO SettingsFactory:213 - Order SQL updates by primary key: disabled
+18:13:56,210  INFO SettingsFactory:382 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+18:13:56,211  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+18:13:56,212  INFO SettingsFactory:221 - Query language substitutions: {}
+18:13:56,212  INFO SettingsFactory:226 - JPA-QL strict compliance: disabled
+18:13:56,212  INFO SettingsFactory:231 - Second-level cache: enabled
+18:13:56,212  INFO SettingsFactory:235 - Query cache: disabled
+18:13:56,212  INFO SettingsFactory:369 - Cache provider: org.hibernate.cache.NoCacheProvider
+18:13:56,212  INFO SettingsFactory:250 - Optimize cache for minimal puts: disabled
+18:13:56,213  INFO SettingsFactory:259 - Structured second-level cache entries: disabled
+18:13:56,215  INFO SettingsFactory:279 - Echoing all SQL to stdout
+18:13:56,215  INFO SettingsFactory:286 - Statistics: disabled
+18:13:56,215  INFO SettingsFactory:290 - Deleted entity synthetic identifier rollback: disabled
+18:13:56,215  INFO SettingsFactory:305 - Default entity-mode: pojo
+18:13:56,215  INFO SettingsFactory:309 - Named query checking : enabled
+18:13:56,236  INFO SessionFactoryImpl:161 - building session factory
+18:13:56,284  INFO PojoInstantiator:61 - no default (no-argument) constructor for class: com.test.testSpringHibernateAOP.customer.model.Customer (class must be instantiated by Interceptor)
+18:13:56,369  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+18:13:56,460 TRACE StringType:133 - binding 'Cotton' to parameter: 1
+18:13:56,461 TRACE LongType:133 - binding '3' to parameter: 2
+18:14:14,140  INFO ClassPathXmlApplicationContext:411 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]; startup date [Thu Mar 31 18:14:14 CST 2016]; root of context hierarchy
+18:14:14,188  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/config/BeanLocations_ClassIntercepted.xml]
+18:14:14,302  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/DataSource.xml]
+18:14:14,342  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/Hibernate.xml]
+18:14:14,370  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/transaction.xml]
+18:14:14,393  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/customer_ClassIntercepted.xml]
+18:14:14,418  INFO ClassPathXmlApplicationContext:426 - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922
+18:14:14,476  INFO PropertyPlaceholderConfigurer:178 - Loading properties file from class path resource [properties/database.properties]
+18:14:14,484  INFO DefaultListableBeanFactory:414 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,transactionInterceptor,transactionManager,customerDao,customerMethodInterceptor,customerDaoProxy]; root of factory hierarchy
+18:14:14,500  INFO DriverManagerDataSource:155 - Loaded JDBC driver: org.apache.derby.jdbc.ClientDriver
+18:14:14,551  INFO Environment:509 - Hibernate 3.2.3
+18:14:14,553  INFO Environment:542 - hibernate.properties not found
+18:14:14,555  INFO Environment:676 - Bytecode provider name : cglib
+18:14:14,558  INFO Environment:593 - using JDK 1.4 java.sql.Timestamp handling
+18:14:14,708  INFO HbmBinder:300 - Mapping class: com.test.testSpringHibernateAOP.customer.model.Customer -> customer
+18:14:14,721  INFO LocalSessionFactoryBean:730 - Building new Hibernate SessionFactory
+18:14:14,761  INFO ConnectionProviderFactory:72 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+18:14:14,930  INFO SettingsFactory:89 - RDBMS: Apache Derby, version: 10.9.1.0 - (1344872)
+18:14:14,930  INFO SettingsFactory:90 - JDBC driver: Apache Derby Network Client JDBC Driver, version: 10.9.1.0 - (1344872)
+18:14:14,966  INFO Dialect:152 - Using dialect: org.hibernate.dialect.DerbyDialect
+18:14:14,969  INFO TransactionFactoryFactory:34 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+18:14:14,970  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+18:14:14,970  INFO SettingsFactory:143 - Automatic flush during beforeCompletion(): disabled
+18:14:14,970  INFO SettingsFactory:147 - Automatic session close at end of transaction: disabled
+18:14:14,971  INFO SettingsFactory:162 - Scrollable result sets: enabled
+18:14:14,971  INFO SettingsFactory:170 - JDBC3 getGeneratedKeys(): disabled
+18:14:14,971  INFO SettingsFactory:178 - Connection release mode: auto
+18:14:14,972  INFO SettingsFactory:205 - Default batch fetch size: 1
+18:14:14,972  INFO SettingsFactory:209 - Generate SQL with comments: disabled
+18:14:14,972  INFO SettingsFactory:213 - Order SQL updates by primary key: disabled
+18:14:14,972  INFO SettingsFactory:382 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+18:14:14,973  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+18:14:14,974  INFO SettingsFactory:221 - Query language substitutions: {}
+18:14:14,974  INFO SettingsFactory:226 - JPA-QL strict compliance: disabled
+18:14:14,974  INFO SettingsFactory:231 - Second-level cache: enabled
+18:14:14,974  INFO SettingsFactory:235 - Query cache: disabled
+18:14:14,974  INFO SettingsFactory:369 - Cache provider: org.hibernate.cache.NoCacheProvider
+18:14:14,974  INFO SettingsFactory:250 - Optimize cache for minimal puts: disabled
+18:14:14,975  INFO SettingsFactory:259 - Structured second-level cache entries: disabled
+18:14:14,977  INFO SettingsFactory:279 - Echoing all SQL to stdout
+18:14:14,977  INFO SettingsFactory:286 - Statistics: disabled
+18:14:14,977  INFO SettingsFactory:290 - Deleted entity synthetic identifier rollback: disabled
+18:14:14,977  INFO SettingsFactory:305 - Default entity-mode: pojo
+18:14:14,977  INFO SettingsFactory:309 - Named query checking : enabled
+18:14:14,997  INFO SessionFactoryImpl:161 - building session factory
+18:14:15,044  INFO PojoInstantiator:61 - no default (no-argument) constructor for class: com.test.testSpringHibernateAOP.customer.model.Customer (class must be instantiated by Interceptor)
+18:14:15,124  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+18:14:15,159  INFO DefaultListableBeanFactory:421 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,transactionInterceptor,transactionManager,customerDao,customerMethodInterceptor,customerDaoProxy]; root of factory hierarchy
+18:14:15,159  INFO LocalSessionFactoryBean:246 - Closing Hibernate SessionFactory
+18:14:15,159  INFO SessionFactoryImpl:769 - closing
+18:15:27,751  INFO ClassPathXmlApplicationContext:411 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]; startup date [Thu Mar 31 18:15:27 CST 2016]; root of context hierarchy
+18:15:27,798  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/config/BeanLocations_ClassIntercepted.xml]
+18:15:27,998  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/DataSource.xml]
+18:15:28,050  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/Hibernate.xml]
+18:15:28,130  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/transaction.xml]
+18:15:28,151  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/customer_ClassIntercepted.xml]
+18:15:28,188  INFO ClassPathXmlApplicationContext:426 - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922
+18:15:28,254  INFO PropertyPlaceholderConfigurer:178 - Loading properties file from class path resource [properties/database.properties]
+18:15:28,264  INFO DefaultListableBeanFactory:414 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,transactionInterceptor,transactionManager,customerDao,customerMethodInterceptor,customerDaoProxy]; root of factory hierarchy
+18:15:28,279  INFO DriverManagerDataSource:155 - Loaded JDBC driver: org.apache.derby.jdbc.ClientDriver
+18:15:28,334  INFO Environment:509 - Hibernate 3.2.3
+18:15:28,337  INFO Environment:542 - hibernate.properties not found
+18:15:28,339  INFO Environment:676 - Bytecode provider name : cglib
+18:15:28,341  INFO Environment:593 - using JDK 1.4 java.sql.Timestamp handling
+18:15:28,482  INFO HbmBinder:300 - Mapping class: com.test.testSpringHibernateAOP.customer.model.Customer -> customer
+18:15:28,495  INFO LocalSessionFactoryBean:730 - Building new Hibernate SessionFactory
+18:15:28,536  INFO ConnectionProviderFactory:72 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+18:15:28,699  INFO SettingsFactory:89 - RDBMS: Apache Derby, version: 10.9.1.0 - (1344872)
+18:15:28,699  INFO SettingsFactory:90 - JDBC driver: Apache Derby Network Client JDBC Driver, version: 10.9.1.0 - (1344872)
+18:15:28,733  INFO Dialect:152 - Using dialect: org.hibernate.dialect.DerbyDialect
+18:15:28,737  INFO TransactionFactoryFactory:34 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+18:15:28,737  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+18:15:28,738  INFO SettingsFactory:143 - Automatic flush during beforeCompletion(): disabled
+18:15:28,738  INFO SettingsFactory:147 - Automatic session close at end of transaction: disabled
+18:15:28,738  INFO SettingsFactory:162 - Scrollable result sets: enabled
+18:15:28,739  INFO SettingsFactory:170 - JDBC3 getGeneratedKeys(): disabled
+18:15:28,739  INFO SettingsFactory:178 - Connection release mode: auto
+18:15:28,739  INFO SettingsFactory:205 - Default batch fetch size: 1
+18:15:28,739  INFO SettingsFactory:209 - Generate SQL with comments: disabled
+18:15:28,740  INFO SettingsFactory:213 - Order SQL updates by primary key: disabled
+18:15:28,740  INFO SettingsFactory:382 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+18:15:28,741  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+18:15:28,741  INFO SettingsFactory:221 - Query language substitutions: {}
+18:15:28,741  INFO SettingsFactory:226 - JPA-QL strict compliance: disabled
+18:15:28,742  INFO SettingsFactory:231 - Second-level cache: enabled
+18:15:28,742  INFO SettingsFactory:235 - Query cache: disabled
+18:15:28,742  INFO SettingsFactory:369 - Cache provider: org.hibernate.cache.NoCacheProvider
+18:15:28,742  INFO SettingsFactory:250 - Optimize cache for minimal puts: disabled
+18:15:28,742  INFO SettingsFactory:259 - Structured second-level cache entries: disabled
+18:15:28,744  INFO SettingsFactory:279 - Echoing all SQL to stdout
+18:15:28,745  INFO SettingsFactory:286 - Statistics: disabled
+18:15:28,745  INFO SettingsFactory:290 - Deleted entity synthetic identifier rollback: disabled
+18:15:28,745  INFO SettingsFactory:305 - Default entity-mode: pojo
+18:15:28,745  INFO SettingsFactory:309 - Named query checking : enabled
+18:15:28,765  INFO SessionFactoryImpl:161 - building session factory
+18:15:28,812  INFO PojoInstantiator:61 - no default (no-argument) constructor for class: com.test.testSpringHibernateAOP.customer.model.Customer (class must be instantiated by Interceptor)
+18:15:28,893  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+18:15:28,984 TRACE StringType:133 - binding 'Cotton' to parameter: 1
+18:15:28,986 TRACE LongType:133 - binding '3' to parameter: 2
+18:19:45,949  INFO ClassPathXmlApplicationContext:411 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]; startup date [Thu Mar 31 18:19:45 CST 2016]; root of context hierarchy
+18:19:45,998  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/config/BeanLocations_ClassIntercepted.xml]
+18:19:46,115  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/DataSource.xml]
+18:19:46,151  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/Hibernate.xml]
+18:19:46,180  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/transaction.xml]
+18:19:46,202  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/customer_ClassIntercepted.xml]
+18:19:46,231  INFO ClassPathXmlApplicationContext:426 - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922
+18:19:46,285  INFO PropertyPlaceholderConfigurer:178 - Loading properties file from class path resource [properties/database.properties]
+18:19:46,294  INFO DefaultListableBeanFactory:414 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,transactionInterceptor,transactionManager,customerDao,customerMethodInterceptor,customerDaoProxy]; root of factory hierarchy
+18:19:46,313  INFO DriverManagerDataSource:155 - Loaded JDBC driver: org.apache.derby.jdbc.ClientDriver
+18:19:46,375  INFO Environment:509 - Hibernate 3.2.3
+18:19:46,378  INFO Environment:542 - hibernate.properties not found
+18:19:46,380  INFO Environment:676 - Bytecode provider name : cglib
+18:19:46,384  INFO Environment:593 - using JDK 1.4 java.sql.Timestamp handling
+18:19:46,520  INFO HbmBinder:300 - Mapping class: com.test.testSpringHibernateAOP.customer.model.Customer -> customer
+18:19:46,532  INFO LocalSessionFactoryBean:730 - Building new Hibernate SessionFactory
+18:19:46,574  INFO ConnectionProviderFactory:72 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+18:19:46,736  INFO SettingsFactory:89 - RDBMS: Apache Derby, version: 10.9.1.0 - (1344872)
+18:19:46,737  INFO SettingsFactory:90 - JDBC driver: Apache Derby Network Client JDBC Driver, version: 10.9.1.0 - (1344872)
+18:19:46,777  INFO Dialect:152 - Using dialect: org.hibernate.dialect.DerbyDialect
+18:19:46,783  INFO TransactionFactoryFactory:34 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+18:19:46,784  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+18:19:46,784  INFO SettingsFactory:143 - Automatic flush during beforeCompletion(): disabled
+18:19:46,785  INFO SettingsFactory:147 - Automatic session close at end of transaction: disabled
+18:19:46,785  INFO SettingsFactory:162 - Scrollable result sets: enabled
+18:19:46,786  INFO SettingsFactory:170 - JDBC3 getGeneratedKeys(): disabled
+18:19:46,786  INFO SettingsFactory:178 - Connection release mode: auto
+18:19:46,787  INFO SettingsFactory:205 - Default batch fetch size: 1
+18:19:46,787  INFO SettingsFactory:209 - Generate SQL with comments: disabled
+18:19:46,788  INFO SettingsFactory:213 - Order SQL updates by primary key: disabled
+18:19:46,788  INFO SettingsFactory:382 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+18:19:46,790  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+18:19:46,790  INFO SettingsFactory:221 - Query language substitutions: {}
+18:19:46,790  INFO SettingsFactory:226 - JPA-QL strict compliance: disabled
+18:19:46,790  INFO SettingsFactory:231 - Second-level cache: enabled
+18:19:46,791  INFO SettingsFactory:235 - Query cache: disabled
+18:19:46,791  INFO SettingsFactory:369 - Cache provider: org.hibernate.cache.NoCacheProvider
+18:19:46,791  INFO SettingsFactory:250 - Optimize cache for minimal puts: disabled
+18:19:46,791  INFO SettingsFactory:259 - Structured second-level cache entries: disabled
+18:19:46,795  INFO SettingsFactory:279 - Echoing all SQL to stdout
+18:19:46,795  INFO SettingsFactory:286 - Statistics: disabled
+18:19:46,795  INFO SettingsFactory:290 - Deleted entity synthetic identifier rollback: disabled
+18:19:46,796  INFO SettingsFactory:305 - Default entity-mode: pojo
+18:19:46,796  INFO SettingsFactory:309 - Named query checking : enabled
+18:19:46,825  INFO SessionFactoryImpl:161 - building session factory
+18:19:46,891  INFO PojoInstantiator:61 - no default (no-argument) constructor for class: com.test.testSpringHibernateAOP.customer.model.Customer (class must be instantiated by Interceptor)
+18:19:46,980  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+18:19:47,066 TRACE StringType:133 - binding 'Cotton' to parameter: 1
+18:19:47,067 TRACE LongType:133 - binding '3' to parameter: 2
+18:19:47,086 TRACE LongType:133 - binding '1' to parameter: 1
+18:19:47,089  INFO DefaultLoadEventListener:111 - Error performing load command
+org.hibernate.InstantiationException: No default constructor for entity: com.test.testSpringHibernateAOP.customer.model.Customer
+	at org.hibernate.tuple.PojoInstantiator.instantiate(PojoInstantiator.java:84)
+	at org.hibernate.tuple.PojoInstantiator.instantiate(PojoInstantiator.java:100)
+	at org.hibernate.tuple.entity.AbstractEntityTuplizer.instantiate(AbstractEntityTuplizer.java:351)
+	at org.hibernate.persister.entity.AbstractEntityPersister.instantiate(AbstractEntityPersister.java:3604)
+	at org.hibernate.impl.SessionImpl.instantiate(SessionImpl.java:1275)
+	at org.hibernate.impl.SessionImpl.instantiate(SessionImpl.java:1264)
+	at org.hibernate.loader.Loader.instanceNotYetLoaded(Loader.java:1299)
+	at org.hibernate.loader.Loader.getRow(Loader.java:1206)
+	at org.hibernate.loader.Loader.getRowFromResultSet(Loader.java:580)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:701)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
+	at org.hibernate.loader.Loader.loadEntity(Loader.java:1860)
+	at org.hibernate.loader.entity.AbstractEntityLoader.load(AbstractEntityLoader.java:48)
+	at org.hibernate.loader.entity.AbstractEntityLoader.load(AbstractEntityLoader.java:42)
+	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:3042)
+	at org.hibernate.event.def.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:395)
+	at org.hibernate.event.def.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:375)
+	at org.hibernate.event.def.DefaultLoadEventListener.load(DefaultLoadEventListener.java:139)
+	at org.hibernate.event.def.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:195)
+	at org.hibernate.event.def.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:103)
+	at org.hibernate.impl.SessionImpl.fireLoad(SessionImpl.java:878)
+	at org.hibernate.impl.SessionImpl.get(SessionImpl.java:815)
+	at org.hibernate.impl.SessionImpl.get(SessionImpl.java:808)
+	at org.springframework.orm.hibernate3.HibernateTemplate$1.doInHibernate(HibernateTemplate.java:531)
+	at org.springframework.orm.hibernate3.HibernateTemplate.doExecute(HibernateTemplate.java:419)
+	at org.springframework.orm.hibernate3.HibernateTemplate.executeWithNativeSession(HibernateTemplate.java:374)
+	at org.springframework.orm.hibernate3.HibernateTemplate.get(HibernateTemplate.java:525)
+	at org.springframework.orm.hibernate3.HibernateTemplate.get(HibernateTemplate.java:519)
+	at com.test.testSpringHibernateAOP.customer.dao.impl.CustomerDaoImpl.find(CustomerDaoImpl.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:307)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:182)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:149)
+	at com.test.testSpringHibernateAOP.customer.aop.CustomerMethodInterceptor.invoke(CustomerMethodInterceptor.java:15)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at com.sun.proxy.$Proxy0.find(Unknown Source)
+	at com.test.testSpringHibernateAOP.common.App.main(App.java:19)
+18:20:52,502  INFO ClassPathXmlApplicationContext:411 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]; startup date [Thu Mar 31 18:20:52 CST 2016]; root of context hierarchy
+18:20:52,548  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/config/BeanLocations_ClassIntercepted.xml]
+18:20:52,665  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/DataSource.xml]
+18:20:52,699  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/Hibernate.xml]
+18:20:52,725  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/transaction.xml]
+18:20:52,746  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/customer_ClassIntercepted.xml]
+18:20:52,774  INFO ClassPathXmlApplicationContext:426 - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922
+18:20:52,817  INFO PropertyPlaceholderConfigurer:178 - Loading properties file from class path resource [properties/database.properties]
+18:20:52,823  INFO DefaultListableBeanFactory:414 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,transactionInterceptor,transactionManager,customerDao,customerMethodInterceptor,customerDaoProxy]; root of factory hierarchy
+18:20:52,836  INFO DriverManagerDataSource:155 - Loaded JDBC driver: org.apache.derby.jdbc.ClientDriver
+18:20:52,881  INFO Environment:509 - Hibernate 3.2.3
+18:20:52,884  INFO Environment:542 - hibernate.properties not found
+18:20:52,887  INFO Environment:676 - Bytecode provider name : cglib
+18:20:52,890  INFO Environment:593 - using JDK 1.4 java.sql.Timestamp handling
+18:20:53,026  INFO HbmBinder:300 - Mapping class: com.test.testSpringHibernateAOP.customer.model.Customer -> customer
+18:20:53,040  INFO LocalSessionFactoryBean:730 - Building new Hibernate SessionFactory
+18:20:53,083  INFO ConnectionProviderFactory:72 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+18:20:53,245  INFO SettingsFactory:89 - RDBMS: Apache Derby, version: 10.9.1.0 - (1344872)
+18:20:53,245  INFO SettingsFactory:90 - JDBC driver: Apache Derby Network Client JDBC Driver, version: 10.9.1.0 - (1344872)
+18:20:53,278  INFO Dialect:152 - Using dialect: org.hibernate.dialect.DerbyDialect
+18:20:53,282  INFO TransactionFactoryFactory:34 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+18:20:53,283  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+18:20:53,283  INFO SettingsFactory:143 - Automatic flush during beforeCompletion(): disabled
+18:20:53,283  INFO SettingsFactory:147 - Automatic session close at end of transaction: disabled
+18:20:53,284  INFO SettingsFactory:162 - Scrollable result sets: enabled
+18:20:53,284  INFO SettingsFactory:170 - JDBC3 getGeneratedKeys(): disabled
+18:20:53,284  INFO SettingsFactory:178 - Connection release mode: auto
+18:20:53,285  INFO SettingsFactory:205 - Default batch fetch size: 1
+18:20:53,285  INFO SettingsFactory:209 - Generate SQL with comments: disabled
+18:20:53,285  INFO SettingsFactory:213 - Order SQL updates by primary key: disabled
+18:20:53,286  INFO SettingsFactory:382 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+18:20:53,287  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+18:20:53,288  INFO SettingsFactory:221 - Query language substitutions: {}
+18:20:53,288  INFO SettingsFactory:226 - JPA-QL strict compliance: disabled
+18:20:53,288  INFO SettingsFactory:231 - Second-level cache: enabled
+18:20:53,288  INFO SettingsFactory:235 - Query cache: disabled
+18:20:53,288  INFO SettingsFactory:369 - Cache provider: org.hibernate.cache.NoCacheProvider
+18:20:53,288  INFO SettingsFactory:250 - Optimize cache for minimal puts: disabled
+18:20:53,289  INFO SettingsFactory:259 - Structured second-level cache entries: disabled
+18:20:53,291  INFO SettingsFactory:279 - Echoing all SQL to stdout
+18:20:53,291  INFO SettingsFactory:286 - Statistics: disabled
+18:20:53,291  INFO SettingsFactory:290 - Deleted entity synthetic identifier rollback: disabled
+18:20:53,291  INFO SettingsFactory:305 - Default entity-mode: pojo
+18:20:53,291  INFO SettingsFactory:309 - Named query checking : enabled
+18:20:53,311  INFO SessionFactoryImpl:161 - building session factory
+18:20:53,443  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+18:20:53,534 TRACE StringType:133 - binding 'Cotton' to parameter: 1
+18:20:53,535 TRACE LongType:133 - binding '3' to parameter: 2
+18:20:53,552 TRACE LongType:133 - binding '1' to parameter: 1
+18:20:53,554 TRACE StringType:172 - returning 'Cotton' as column: NAME0_0_
+18:20:53,554 TRACE LongType:172 - returning '3' as column: AGE0_0_
+18:25:25,560  INFO ClassPathXmlApplicationContext:411 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]; startup date [Thu Mar 31 18:25:25 CST 2016]; root of context hierarchy
+18:25:25,611  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/config/BeanLocations_MethodPointcutAdvisor.xml]
+18:25:25,728  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/DataSource.xml]
+18:25:25,765  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/Hibernate.xml]
+18:25:25,793  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/transaction.xml]
+18:25:25,819  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/customer_MethodPointcutAdvisor.xml]
+18:25:25,851  INFO ClassPathXmlApplicationContext:426 - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922
+18:25:25,913  INFO PropertyPlaceholderConfigurer:178 - Loading properties file from class path resource [properties/database.properties]
+18:25:25,921  INFO DefaultListableBeanFactory:414 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,transactionInterceptor,transactionManager,customerDao,customerMethodInterceptor,customerPointcutAdvisor,customerDaoProxy]; root of factory hierarchy
+18:25:25,940  INFO DriverManagerDataSource:155 - Loaded JDBC driver: org.apache.derby.jdbc.ClientDriver
+18:25:25,993  INFO Environment:509 - Hibernate 3.2.3
+18:25:25,996  INFO Environment:542 - hibernate.properties not found
+18:25:25,999  INFO Environment:676 - Bytecode provider name : cglib
+18:25:26,002  INFO Environment:593 - using JDK 1.4 java.sql.Timestamp handling
+18:25:26,128  INFO HbmBinder:300 - Mapping class: com.test.testSpringHibernateAOP.customer.model.Customer -> customer
+18:25:26,141  INFO LocalSessionFactoryBean:730 - Building new Hibernate SessionFactory
+18:25:26,180  INFO ConnectionProviderFactory:72 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+18:25:26,348  INFO SettingsFactory:89 - RDBMS: Apache Derby, version: 10.9.1.0 - (1344872)
+18:25:26,349  INFO SettingsFactory:90 - JDBC driver: Apache Derby Network Client JDBC Driver, version: 10.9.1.0 - (1344872)
+18:25:26,382  INFO Dialect:152 - Using dialect: org.hibernate.dialect.DerbyDialect
+18:25:26,385  INFO TransactionFactoryFactory:34 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+18:25:26,386  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+18:25:26,386  INFO SettingsFactory:143 - Automatic flush during beforeCompletion(): disabled
+18:25:26,386  INFO SettingsFactory:147 - Automatic session close at end of transaction: disabled
+18:25:26,387  INFO SettingsFactory:162 - Scrollable result sets: enabled
+18:25:26,387  INFO SettingsFactory:170 - JDBC3 getGeneratedKeys(): disabled
+18:25:26,387  INFO SettingsFactory:178 - Connection release mode: auto
+18:25:26,388  INFO SettingsFactory:205 - Default batch fetch size: 1
+18:25:26,388  INFO SettingsFactory:209 - Generate SQL with comments: disabled
+18:25:26,389  INFO SettingsFactory:213 - Order SQL updates by primary key: disabled
+18:25:26,389  INFO SettingsFactory:382 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+18:25:26,390  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+18:25:26,390  INFO SettingsFactory:221 - Query language substitutions: {}
+18:25:26,390  INFO SettingsFactory:226 - JPA-QL strict compliance: disabled
+18:25:26,390  INFO SettingsFactory:231 - Second-level cache: enabled
+18:25:26,391  INFO SettingsFactory:235 - Query cache: disabled
+18:25:26,391  INFO SettingsFactory:369 - Cache provider: org.hibernate.cache.NoCacheProvider
+18:25:26,391  INFO SettingsFactory:250 - Optimize cache for minimal puts: disabled
+18:25:26,391  INFO SettingsFactory:259 - Structured second-level cache entries: disabled
+18:25:26,393  INFO SettingsFactory:279 - Echoing all SQL to stdout
+18:25:26,393  INFO SettingsFactory:286 - Statistics: disabled
+18:25:26,393  INFO SettingsFactory:290 - Deleted entity synthetic identifier rollback: disabled
+18:25:26,394  INFO SettingsFactory:305 - Default entity-mode: pojo
+18:25:26,394  INFO SettingsFactory:309 - Named query checking : enabled
+18:25:26,414  INFO SessionFactoryImpl:161 - building session factory
+18:25:26,548  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+18:25:26,639 TRACE StringType:133 - binding 'Cotton' to parameter: 1
+18:25:26,640 TRACE LongType:133 - binding '3' to parameter: 2
+18:25:26,657 TRACE LongType:133 - binding '1' to parameter: 1
+18:25:26,660 TRACE StringType:172 - returning 'Cotton' as column: NAME0_0_
+18:25:26,660 TRACE LongType:172 - returning '3' as column: AGE0_0_
+18:29:47,333  INFO ClassPathXmlApplicationContext:411 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]; startup date [Thu Mar 31 18:29:47 CST 2016]; root of context hierarchy
+18:29:47,380  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/config/BeanLocations_PatternMethodPointcutAdvisor.xml]
+18:29:47,494  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/DataSource.xml]
+18:29:47,536  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/Hibernate.xml]
+18:29:47,563  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/transaction.xml]
+18:29:47,586  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/customer_PatternMethodPointcutAdvisor.xml]
+18:29:47,615  INFO ClassPathXmlApplicationContext:426 - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922
+18:29:47,674  INFO PropertyPlaceholderConfigurer:178 - Loading properties file from class path resource [properties/database.properties]
+18:29:47,683  INFO DefaultListableBeanFactory:414 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,transactionInterceptor,transactionManager,customerDao,customerMethodInterceptor,customerPointcutAdvisor,customerDaoProxy]; root of factory hierarchy
+18:29:47,700  INFO DriverManagerDataSource:155 - Loaded JDBC driver: org.apache.derby.jdbc.ClientDriver
+18:29:47,750  INFO Environment:509 - Hibernate 3.2.3
+18:29:47,753  INFO Environment:542 - hibernate.properties not found
+18:29:47,755  INFO Environment:676 - Bytecode provider name : cglib
+18:29:47,758  INFO Environment:593 - using JDK 1.4 java.sql.Timestamp handling
+18:29:47,890  INFO HbmBinder:300 - Mapping class: com.test.testSpringHibernateAOP.customer.model.Customer -> customer
+18:29:47,903  INFO LocalSessionFactoryBean:730 - Building new Hibernate SessionFactory
+18:29:47,937  INFO ConnectionProviderFactory:72 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+18:29:48,103  INFO SettingsFactory:89 - RDBMS: Apache Derby, version: 10.9.1.0 - (1344872)
+18:29:48,103  INFO SettingsFactory:90 - JDBC driver: Apache Derby Network Client JDBC Driver, version: 10.9.1.0 - (1344872)
+18:29:48,140  INFO Dialect:152 - Using dialect: org.hibernate.dialect.DerbyDialect
+18:29:48,143  INFO TransactionFactoryFactory:34 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+18:29:48,144  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+18:29:48,144  INFO SettingsFactory:143 - Automatic flush during beforeCompletion(): disabled
+18:29:48,144  INFO SettingsFactory:147 - Automatic session close at end of transaction: disabled
+18:29:48,145  INFO SettingsFactory:162 - Scrollable result sets: enabled
+18:29:48,145  INFO SettingsFactory:170 - JDBC3 getGeneratedKeys(): disabled
+18:29:48,145  INFO SettingsFactory:178 - Connection release mode: auto
+18:29:48,146  INFO SettingsFactory:205 - Default batch fetch size: 1
+18:29:48,146  INFO SettingsFactory:209 - Generate SQL with comments: disabled
+18:29:48,146  INFO SettingsFactory:213 - Order SQL updates by primary key: disabled
+18:29:48,146  INFO SettingsFactory:382 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+18:29:48,148  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+18:29:48,148  INFO SettingsFactory:221 - Query language substitutions: {}
+18:29:48,148  INFO SettingsFactory:226 - JPA-QL strict compliance: disabled
+18:29:48,148  INFO SettingsFactory:231 - Second-level cache: enabled
+18:29:48,148  INFO SettingsFactory:235 - Query cache: disabled
+18:29:48,149  INFO SettingsFactory:369 - Cache provider: org.hibernate.cache.NoCacheProvider
+18:29:48,149  INFO SettingsFactory:250 - Optimize cache for minimal puts: disabled
+18:29:48,149  INFO SettingsFactory:259 - Structured second-level cache entries: disabled
+18:29:48,151  INFO SettingsFactory:279 - Echoing all SQL to stdout
+18:29:48,152  INFO SettingsFactory:286 - Statistics: disabled
+18:29:48,152  INFO SettingsFactory:290 - Deleted entity synthetic identifier rollback: disabled
+18:29:48,152  INFO SettingsFactory:305 - Default entity-mode: pojo
+18:29:48,152  INFO SettingsFactory:309 - Named query checking : enabled
+18:29:48,172  INFO SessionFactoryImpl:161 - building session factory
+18:29:48,299  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+18:29:48,396 TRACE StringType:133 - binding 'Cotton' to parameter: 1
+18:29:48,397 TRACE LongType:133 - binding '3' to parameter: 2
+18:29:48,415 TRACE LongType:133 - binding '1' to parameter: 1
+18:29:48,417 TRACE StringType:172 - returning 'Cotton' as column: NAME0_0_
+18:29:48,418 TRACE LongType:172 - returning '3' as column: AGE0_0_
+18:34:25,053  INFO ClassPathXmlApplicationContext:411 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]; startup date [Thu Mar 31 18:34:25 CST 2016]; root of context hierarchy
+18:34:25,098  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/config/BeanLocations_PatternMethodPointcutAdvisor.xml]
+18:34:25,214  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/DataSource.xml]
+18:34:25,248  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/Hibernate.xml]
+18:34:25,273  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/transaction.xml]
+18:34:25,298  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/customer_PatternMethodPointcutAdvisor.xml]
+18:34:25,329  INFO ClassPathXmlApplicationContext:426 - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922
+18:34:25,386  INFO PropertyPlaceholderConfigurer:178 - Loading properties file from class path resource [properties/database.properties]
+18:34:25,394  INFO DefaultListableBeanFactory:414 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,transactionInterceptor,transactionManager,customerDao,customerMethodInterceptor,customerPointcutAdvisor,customerDaoProxy]; root of factory hierarchy
+18:34:25,408  INFO DriverManagerDataSource:155 - Loaded JDBC driver: org.apache.derby.jdbc.ClientDriver
+18:34:25,463  INFO Environment:509 - Hibernate 3.2.3
+18:34:25,466  INFO Environment:542 - hibernate.properties not found
+18:34:25,469  INFO Environment:676 - Bytecode provider name : cglib
+18:34:25,472  INFO Environment:593 - using JDK 1.4 java.sql.Timestamp handling
+18:34:25,602  INFO HbmBinder:300 - Mapping class: com.test.testSpringHibernateAOP.customer.model.Customer -> customer
+18:34:25,616  INFO LocalSessionFactoryBean:730 - Building new Hibernate SessionFactory
+18:34:25,656  INFO ConnectionProviderFactory:72 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+18:34:25,823  INFO SettingsFactory:89 - RDBMS: Apache Derby, version: 10.9.1.0 - (1344872)
+18:34:25,823  INFO SettingsFactory:90 - JDBC driver: Apache Derby Network Client JDBC Driver, version: 10.9.1.0 - (1344872)
+18:34:25,858  INFO Dialect:152 - Using dialect: org.hibernate.dialect.DerbyDialect
+18:34:25,863  INFO TransactionFactoryFactory:34 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+18:34:25,864  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+18:34:25,864  INFO SettingsFactory:143 - Automatic flush during beforeCompletion(): disabled
+18:34:25,864  INFO SettingsFactory:147 - Automatic session close at end of transaction: disabled
+18:34:25,865  INFO SettingsFactory:162 - Scrollable result sets: enabled
+18:34:25,865  INFO SettingsFactory:170 - JDBC3 getGeneratedKeys(): disabled
+18:34:25,865  INFO SettingsFactory:178 - Connection release mode: auto
+18:34:25,866  INFO SettingsFactory:205 - Default batch fetch size: 1
+18:34:25,866  INFO SettingsFactory:209 - Generate SQL with comments: disabled
+18:34:25,866  INFO SettingsFactory:213 - Order SQL updates by primary key: disabled
+18:34:25,867  INFO SettingsFactory:382 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+18:34:25,868  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+18:34:25,868  INFO SettingsFactory:221 - Query language substitutions: {}
+18:34:25,868  INFO SettingsFactory:226 - JPA-QL strict compliance: disabled
+18:34:25,868  INFO SettingsFactory:231 - Second-level cache: enabled
+18:34:25,869  INFO SettingsFactory:235 - Query cache: disabled
+18:34:25,869  INFO SettingsFactory:369 - Cache provider: org.hibernate.cache.NoCacheProvider
+18:34:25,869  INFO SettingsFactory:250 - Optimize cache for minimal puts: disabled
+18:34:25,869  INFO SettingsFactory:259 - Structured second-level cache entries: disabled
+18:34:25,871  INFO SettingsFactory:279 - Echoing all SQL to stdout
+18:34:25,871  INFO SettingsFactory:286 - Statistics: disabled
+18:34:25,871  INFO SettingsFactory:290 - Deleted entity synthetic identifier rollback: disabled
+18:34:25,872  INFO SettingsFactory:305 - Default entity-mode: pojo
+18:34:25,872  INFO SettingsFactory:309 - Named query checking : enabled
+18:34:25,892  INFO SessionFactoryImpl:161 - building session factory
+18:34:26,016  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+18:34:26,106 TRACE StringType:133 - binding 'Cotton' to parameter: 1
+18:34:26,107 TRACE LongType:133 - binding '3' to parameter: 2
+18:34:26,124 TRACE LongType:133 - binding '1' to parameter: 1
+18:34:26,127 TRACE StringType:172 - returning 'Cotton' as column: NAME0_0_
+18:34:26,127 TRACE LongType:172 - returning '3' as column: AGE0_0_
+18:34:39,851  INFO ClassPathXmlApplicationContext:411 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]; startup date [Thu Mar 31 18:34:39 CST 2016]; root of context hierarchy
+18:34:39,900  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/config/BeanLocations_NameMatchMethodPointcut.xml]
+18:34:40,022  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/DataSource.xml]
+18:34:40,064  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/Hibernate.xml]
+18:34:40,093  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/transaction.xml]
+18:34:40,117  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/customer_NameMatchMethodPointcut.xml]
+18:34:40,145  INFO ClassPathXmlApplicationContext:426 - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922
+18:34:40,203  INFO PropertyPlaceholderConfigurer:178 - Loading properties file from class path resource [properties/database.properties]
+18:34:40,211  INFO DefaultListableBeanFactory:414 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,transactionInterceptor,transactionManager,customerDaoProxy,customerMethodInterceptor,customerNameMatchMethodPointcut,customerDefaultPointcutAdvisor]; root of factory hierarchy
+18:34:40,227  INFO DriverManagerDataSource:155 - Loaded JDBC driver: org.apache.derby.jdbc.ClientDriver
+18:34:40,282  INFO Environment:509 - Hibernate 3.2.3
+18:34:40,285  INFO Environment:542 - hibernate.properties not found
+18:34:40,288  INFO Environment:676 - Bytecode provider name : cglib
+18:34:40,291  INFO Environment:593 - using JDK 1.4 java.sql.Timestamp handling
+18:34:40,426  INFO HbmBinder:300 - Mapping class: com.test.testSpringHibernateAOP.customer.model.Customer -> customer
+18:34:40,438  INFO LocalSessionFactoryBean:730 - Building new Hibernate SessionFactory
+18:34:40,480  INFO ConnectionProviderFactory:72 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+18:34:40,657  INFO SettingsFactory:89 - RDBMS: Apache Derby, version: 10.9.1.0 - (1344872)
+18:34:40,657  INFO SettingsFactory:90 - JDBC driver: Apache Derby Network Client JDBC Driver, version: 10.9.1.0 - (1344872)
+18:34:40,699  INFO Dialect:152 - Using dialect: org.hibernate.dialect.DerbyDialect
+18:34:40,704  INFO TransactionFactoryFactory:34 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+18:34:40,705  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+18:34:40,706  INFO SettingsFactory:143 - Automatic flush during beforeCompletion(): disabled
+18:34:40,706  INFO SettingsFactory:147 - Automatic session close at end of transaction: disabled
+18:34:40,707  INFO SettingsFactory:162 - Scrollable result sets: enabled
+18:34:40,707  INFO SettingsFactory:170 - JDBC3 getGeneratedKeys(): disabled
+18:34:40,707  INFO SettingsFactory:178 - Connection release mode: auto
+18:34:40,708  INFO SettingsFactory:205 - Default batch fetch size: 1
+18:34:40,708  INFO SettingsFactory:209 - Generate SQL with comments: disabled
+18:34:40,708  INFO SettingsFactory:213 - Order SQL updates by primary key: disabled
+18:34:40,709  INFO SettingsFactory:382 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+18:34:40,710  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+18:34:40,711  INFO SettingsFactory:221 - Query language substitutions: {}
+18:34:40,711  INFO SettingsFactory:226 - JPA-QL strict compliance: disabled
+18:34:40,711  INFO SettingsFactory:231 - Second-level cache: enabled
+18:34:40,711  INFO SettingsFactory:235 - Query cache: disabled
+18:34:40,712  INFO SettingsFactory:369 - Cache provider: org.hibernate.cache.NoCacheProvider
+18:34:40,712  INFO SettingsFactory:250 - Optimize cache for minimal puts: disabled
+18:34:40,712  INFO SettingsFactory:259 - Structured second-level cache entries: disabled
+18:34:40,716  INFO SettingsFactory:279 - Echoing all SQL to stdout
+18:34:40,716  INFO SettingsFactory:286 - Statistics: disabled
+18:34:40,716  INFO SettingsFactory:290 - Deleted entity synthetic identifier rollback: disabled
+18:34:40,716  INFO SettingsFactory:305 - Default entity-mode: pojo
+18:34:40,717  INFO SettingsFactory:309 - Named query checking : enabled
+18:34:40,743  INFO SessionFactoryImpl:161 - building session factory
+18:34:40,880  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+18:34:40,944 TRACE StringType:133 - binding 'Cotton' to parameter: 1
+18:34:40,945 TRACE LongType:133 - binding '3' to parameter: 2
+18:34:40,960 TRACE LongType:133 - binding '1' to parameter: 1
+18:34:40,962 TRACE StringType:172 - returning 'Cotton' as column: NAME0_0_
+18:34:40,962 TRACE LongType:172 - returning '3' as column: AGE0_0_
+18:36:41,048  INFO ClassPathXmlApplicationContext:411 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]; startup date [Thu Mar 31 18:36:41 CST 2016]; root of context hierarchy
+18:36:41,108  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/config/BeanLocations_NameMatchMethodPointcut.xml]
+18:36:41,255  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/DataSource.xml]
+18:36:41,295  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/Hibernate.xml]
+18:36:41,323  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/transaction.xml]
+18:36:41,346  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/customer_NameMatchMethodPointcut.xml]
+18:36:41,376  INFO ClassPathXmlApplicationContext:426 - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922
+18:36:41,434  INFO PropertyPlaceholderConfigurer:178 - Loading properties file from class path resource [properties/database.properties]
+18:36:41,443  INFO DefaultListableBeanFactory:414 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,transactionInterceptor,transactionManager,customerDao,customerMethodInterceptor,customerNameMatchMethodPointcut,customerDefaultPointcutAdvisor,customerDaoProxy]; root of factory hierarchy
+18:36:41,466  INFO DriverManagerDataSource:155 - Loaded JDBC driver: org.apache.derby.jdbc.ClientDriver
+18:36:41,517  INFO Environment:509 - Hibernate 3.2.3
+18:36:41,519  INFO Environment:542 - hibernate.properties not found
+18:36:41,521  INFO Environment:676 - Bytecode provider name : cglib
+18:36:41,524  INFO Environment:593 - using JDK 1.4 java.sql.Timestamp handling
+18:36:41,666  INFO HbmBinder:300 - Mapping class: com.test.testSpringHibernateAOP.customer.model.Customer -> customer
+18:36:41,678  INFO LocalSessionFactoryBean:730 - Building new Hibernate SessionFactory
+18:36:41,719  INFO ConnectionProviderFactory:72 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+18:36:41,901  INFO SettingsFactory:89 - RDBMS: Apache Derby, version: 10.9.1.0 - (1344872)
+18:36:41,901  INFO SettingsFactory:90 - JDBC driver: Apache Derby Network Client JDBC Driver, version: 10.9.1.0 - (1344872)
+18:36:41,935  INFO Dialect:152 - Using dialect: org.hibernate.dialect.DerbyDialect
+18:36:41,938  INFO TransactionFactoryFactory:34 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+18:36:41,939  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+18:36:41,939  INFO SettingsFactory:143 - Automatic flush during beforeCompletion(): disabled
+18:36:41,940  INFO SettingsFactory:147 - Automatic session close at end of transaction: disabled
+18:36:41,940  INFO SettingsFactory:162 - Scrollable result sets: enabled
+18:36:41,940  INFO SettingsFactory:170 - JDBC3 getGeneratedKeys(): disabled
+18:36:41,940  INFO SettingsFactory:178 - Connection release mode: auto
+18:36:41,941  INFO SettingsFactory:205 - Default batch fetch size: 1
+18:36:41,941  INFO SettingsFactory:209 - Generate SQL with comments: disabled
+18:36:41,941  INFO SettingsFactory:213 - Order SQL updates by primary key: disabled
+18:36:41,941  INFO SettingsFactory:382 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+18:36:41,943  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+18:36:41,943  INFO SettingsFactory:221 - Query language substitutions: {}
+18:36:41,943  INFO SettingsFactory:226 - JPA-QL strict compliance: disabled
+18:36:41,943  INFO SettingsFactory:231 - Second-level cache: enabled
+18:36:41,943  INFO SettingsFactory:235 - Query cache: disabled
+18:36:41,943  INFO SettingsFactory:369 - Cache provider: org.hibernate.cache.NoCacheProvider
+18:36:41,943  INFO SettingsFactory:250 - Optimize cache for minimal puts: disabled
+18:36:41,944  INFO SettingsFactory:259 - Structured second-level cache entries: disabled
+18:36:41,946  INFO SettingsFactory:279 - Echoing all SQL to stdout
+18:36:41,946  INFO SettingsFactory:286 - Statistics: disabled
+18:36:41,946  INFO SettingsFactory:290 - Deleted entity synthetic identifier rollback: disabled
+18:36:41,946  INFO SettingsFactory:305 - Default entity-mode: pojo
+18:36:41,946  INFO SettingsFactory:309 - Named query checking : enabled
+18:36:41,969  INFO SessionFactoryImpl:161 - building session factory
+18:36:42,098  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+18:36:42,197 TRACE StringType:133 - binding 'Cotton' to parameter: 1
+18:36:42,198 TRACE LongType:133 - binding '3' to parameter: 2
+18:36:42,214 TRACE LongType:133 - binding '1' to parameter: 1
+18:36:42,217 TRACE StringType:172 - returning 'Cotton' as column: NAME0_0_
+18:36:42,217 TRACE LongType:172 - returning '3' as column: AGE0_0_
+18:50:51,494  INFO ClassPathXmlApplicationContext:411 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]; startup date [Thu Mar 31 18:50:51 CST 2016]; root of context hierarchy
+18:50:51,542  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/config/BeanLocations_NameMatchMethodPointcut.xml]
+18:50:51,660  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/DataSource.xml]
+18:50:51,697  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/Hibernate.xml]
+18:50:51,723  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/transaction.xml]
+18:50:51,747  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/customer_NameMatchMethodPointcut.xml]
+18:50:51,778  INFO ClassPathXmlApplicationContext:426 - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922
+18:50:51,847  INFO PropertyPlaceholderConfigurer:178 - Loading properties file from class path resource [properties/database.properties]
+18:50:51,859  INFO DefaultListableBeanFactory:414 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,transactionInterceptor,transactionManager,customerDao,customerMethodInterceptor,customerNameMatchMethodPointcut,customerDefaultPointcutAdvisor,customerDaoProxy]; root of factory hierarchy
+18:50:51,881  INFO DriverManagerDataSource:155 - Loaded JDBC driver: org.apache.derby.jdbc.ClientDriver
+18:50:51,934  INFO Environment:509 - Hibernate 3.2.3
+18:50:51,937  INFO Environment:542 - hibernate.properties not found
+18:50:51,939  INFO Environment:676 - Bytecode provider name : cglib
+18:50:51,943  INFO Environment:593 - using JDK 1.4 java.sql.Timestamp handling
+18:50:52,073  INFO HbmBinder:300 - Mapping class: com.test.testSpringHibernateAOP.customer.model.Customer -> customer
+18:50:52,086  INFO LocalSessionFactoryBean:730 - Building new Hibernate SessionFactory
+18:50:52,127  INFO ConnectionProviderFactory:72 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+18:50:52,288  INFO SettingsFactory:89 - RDBMS: Apache Derby, version: 10.9.1.0 - (1344872)
+18:50:52,288  INFO SettingsFactory:90 - JDBC driver: Apache Derby Network Client JDBC Driver, version: 10.9.1.0 - (1344872)
+18:50:52,323  INFO Dialect:152 - Using dialect: org.hibernate.dialect.DerbyDialect
+18:50:52,326  INFO TransactionFactoryFactory:34 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+18:50:52,327  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+18:50:52,327  INFO SettingsFactory:143 - Automatic flush during beforeCompletion(): disabled
+18:50:52,327  INFO SettingsFactory:147 - Automatic session close at end of transaction: disabled
+18:50:52,328  INFO SettingsFactory:162 - Scrollable result sets: enabled
+18:50:52,328  INFO SettingsFactory:170 - JDBC3 getGeneratedKeys(): disabled
+18:50:52,328  INFO SettingsFactory:178 - Connection release mode: auto
+18:50:52,329  INFO SettingsFactory:205 - Default batch fetch size: 1
+18:50:52,329  INFO SettingsFactory:209 - Generate SQL with comments: disabled
+18:50:52,329  INFO SettingsFactory:213 - Order SQL updates by primary key: disabled
+18:50:52,329  INFO SettingsFactory:382 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+18:50:52,330  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+18:50:52,330  INFO SettingsFactory:221 - Query language substitutions: {}
+18:50:52,331  INFO SettingsFactory:226 - JPA-QL strict compliance: disabled
+18:50:52,331  INFO SettingsFactory:231 - Second-level cache: enabled
+18:50:52,331  INFO SettingsFactory:235 - Query cache: disabled
+18:50:52,331  INFO SettingsFactory:369 - Cache provider: org.hibernate.cache.NoCacheProvider
+18:50:52,331  INFO SettingsFactory:250 - Optimize cache for minimal puts: disabled
+18:50:52,331  INFO SettingsFactory:259 - Structured second-level cache entries: disabled
+18:50:52,334  INFO SettingsFactory:279 - Echoing all SQL to stdout
+18:50:52,334  INFO SettingsFactory:286 - Statistics: disabled
+18:50:52,334  INFO SettingsFactory:290 - Deleted entity synthetic identifier rollback: disabled
+18:50:52,334  INFO SettingsFactory:305 - Default entity-mode: pojo
+18:50:52,334  INFO SettingsFactory:309 - Named query checking : enabled
+18:50:52,353  INFO SessionFactoryImpl:161 - building session factory
+18:50:52,485  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+18:50:52,581 TRACE StringType:133 - binding 'Cotton' to parameter: 1
+18:50:52,582 TRACE LongType:133 - binding '3' to parameter: 2
+18:50:52,604 TRACE LongType:133 - binding '1' to parameter: 1
+18:50:52,607 TRACE StringType:172 - returning 'Cotton' as column: NAME0_0_
+18:50:52,607 TRACE LongType:172 - returning '3' as column: AGE0_0_
+18:53:04,706  INFO ClassPathXmlApplicationContext:411 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]; startup date [Thu Mar 31 18:53:04 CST 2016]; root of context hierarchy
+18:53:04,754  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/config/BeanLocations_NameMatchMethodPointcut.xml]
+18:53:04,872  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/DataSource.xml]
+18:53:04,909  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/Hibernate.xml]
+18:53:04,938  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/transaction.xml]
+18:53:04,961  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/customer_NameMatchMethodPointcut.xml]
+18:53:04,990  INFO ClassPathXmlApplicationContext:426 - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922
+18:53:05,050  INFO PropertyPlaceholderConfigurer:178 - Loading properties file from class path resource [properties/database.properties]
+18:53:05,057  INFO DefaultListableBeanFactory:414 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,transactionInterceptor,transactionManager,customerDao,customerMethodInterceptor,customerNameMatchMethodPointcut,customerDefaultPointcutAdvisor,customerDaoProxy]; root of factory hierarchy
+18:53:05,076  INFO DriverManagerDataSource:155 - Loaded JDBC driver: org.apache.derby.jdbc.ClientDriver
+18:53:05,126  INFO Environment:509 - Hibernate 3.2.3
+18:53:05,130  INFO Environment:542 - hibernate.properties not found
+18:53:05,132  INFO Environment:676 - Bytecode provider name : cglib
+18:53:05,135  INFO Environment:593 - using JDK 1.4 java.sql.Timestamp handling
+18:53:05,263  INFO HbmBinder:300 - Mapping class: com.test.testSpringHibernateAOP.customer.model.Customer -> customer
+18:53:05,273  INFO LocalSessionFactoryBean:730 - Building new Hibernate SessionFactory
+18:53:05,309  INFO ConnectionProviderFactory:72 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+18:53:05,506  INFO SettingsFactory:89 - RDBMS: Apache Derby, version: 10.9.1.0 - (1344872)
+18:53:05,506  INFO SettingsFactory:90 - JDBC driver: Apache Derby Network Client JDBC Driver, version: 10.9.1.0 - (1344872)
+18:53:05,540  INFO Dialect:152 - Using dialect: org.hibernate.dialect.DerbyDialect
+18:53:05,543  INFO TransactionFactoryFactory:34 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+18:53:05,544  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+18:53:05,544  INFO SettingsFactory:143 - Automatic flush during beforeCompletion(): disabled
+18:53:05,544  INFO SettingsFactory:147 - Automatic session close at end of transaction: disabled
+18:53:05,545  INFO SettingsFactory:162 - Scrollable result sets: enabled
+18:53:05,545  INFO SettingsFactory:170 - JDBC3 getGeneratedKeys(): disabled
+18:53:05,545  INFO SettingsFactory:178 - Connection release mode: auto
+18:53:05,546  INFO SettingsFactory:205 - Default batch fetch size: 1
+18:53:05,546  INFO SettingsFactory:209 - Generate SQL with comments: disabled
+18:53:05,546  INFO SettingsFactory:213 - Order SQL updates by primary key: disabled
+18:53:05,546  INFO SettingsFactory:382 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+18:53:05,547  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+18:53:05,547  INFO SettingsFactory:221 - Query language substitutions: {}
+18:53:05,548  INFO SettingsFactory:226 - JPA-QL strict compliance: disabled
+18:53:05,548  INFO SettingsFactory:231 - Second-level cache: enabled
+18:53:05,548  INFO SettingsFactory:235 - Query cache: disabled
+18:53:05,548  INFO SettingsFactory:369 - Cache provider: org.hibernate.cache.NoCacheProvider
+18:53:05,548  INFO SettingsFactory:250 - Optimize cache for minimal puts: disabled
+18:53:05,548  INFO SettingsFactory:259 - Structured second-level cache entries: disabled
+18:53:05,550  INFO SettingsFactory:279 - Echoing all SQL to stdout
+18:53:05,551  INFO SettingsFactory:286 - Statistics: disabled
+18:53:05,551  INFO SettingsFactory:290 - Deleted entity synthetic identifier rollback: disabled
+18:53:05,551  INFO SettingsFactory:305 - Default entity-mode: pojo
+18:53:05,551  INFO SettingsFactory:309 - Named query checking : enabled
+18:53:05,570  INFO SessionFactoryImpl:161 - building session factory
+18:53:05,693  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+18:53:05,792 TRACE StringType:133 - binding 'Cotton' to parameter: 1
+18:53:05,794 TRACE LongType:133 - binding '3' to parameter: 2
+18:58:28,147  INFO ClassPathXmlApplicationContext:411 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]; startup date [Thu Mar 31 18:58:28 CST 2016]; root of context hierarchy
+18:58:28,192  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/config/BeanLocations_NameMatchMethodPointcut.xml]
+18:58:28,304  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/DataSource.xml]
+18:58:28,339  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/Hibernate.xml]
+18:58:28,365  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/transaction.xml]
+18:58:28,387  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/customer_NameMatchMethodPointcut.xml]
+18:58:28,419  INFO ClassPathXmlApplicationContext:426 - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922
+18:58:28,463  INFO PropertyPlaceholderConfigurer:178 - Loading properties file from class path resource [properties/database.properties]
+18:58:28,470  INFO DefaultListableBeanFactory:414 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,transactionInterceptor,transactionManager,customerDao,hijackThrowExceptionBean,customerMethodInterceptor,customerNameMatchMethodPointcut,customerDefaultPointcutAdvisor,customerDaoProxy]; root of factory hierarchy
+18:58:28,483  INFO DriverManagerDataSource:155 - Loaded JDBC driver: org.apache.derby.jdbc.ClientDriver
+18:58:28,523  INFO Environment:509 - Hibernate 3.2.3
+18:58:28,525  INFO Environment:542 - hibernate.properties not found
+18:58:28,527  INFO Environment:676 - Bytecode provider name : cglib
+18:58:28,531  INFO Environment:593 - using JDK 1.4 java.sql.Timestamp handling
+18:58:28,668  INFO HbmBinder:300 - Mapping class: com.test.testSpringHibernateAOP.customer.model.Customer -> customer
+18:58:28,677  INFO LocalSessionFactoryBean:730 - Building new Hibernate SessionFactory
+18:58:28,714  INFO ConnectionProviderFactory:72 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+18:58:28,877  INFO SettingsFactory:89 - RDBMS: Apache Derby, version: 10.9.1.0 - (1344872)
+18:58:28,878  INFO SettingsFactory:90 - JDBC driver: Apache Derby Network Client JDBC Driver, version: 10.9.1.0 - (1344872)
+18:58:28,911  INFO Dialect:152 - Using dialect: org.hibernate.dialect.DerbyDialect
+18:58:28,915  INFO TransactionFactoryFactory:34 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+18:58:28,916  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+18:58:28,916  INFO SettingsFactory:143 - Automatic flush during beforeCompletion(): disabled
+18:58:28,916  INFO SettingsFactory:147 - Automatic session close at end of transaction: disabled
+18:58:28,917  INFO SettingsFactory:162 - Scrollable result sets: enabled
+18:58:28,917  INFO SettingsFactory:170 - JDBC3 getGeneratedKeys(): disabled
+18:58:28,917  INFO SettingsFactory:178 - Connection release mode: auto
+18:58:28,917  INFO SettingsFactory:205 - Default batch fetch size: 1
+18:58:28,918  INFO SettingsFactory:209 - Generate SQL with comments: disabled
+18:58:28,918  INFO SettingsFactory:213 - Order SQL updates by primary key: disabled
+18:58:28,918  INFO SettingsFactory:382 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+18:58:28,919  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+18:58:28,919  INFO SettingsFactory:221 - Query language substitutions: {}
+18:58:28,919  INFO SettingsFactory:226 - JPA-QL strict compliance: disabled
+18:58:28,920  INFO SettingsFactory:231 - Second-level cache: enabled
+18:58:28,920  INFO SettingsFactory:235 - Query cache: disabled
+18:58:28,920  INFO SettingsFactory:369 - Cache provider: org.hibernate.cache.NoCacheProvider
+18:58:28,920  INFO SettingsFactory:250 - Optimize cache for minimal puts: disabled
+18:58:28,920  INFO SettingsFactory:259 - Structured second-level cache entries: disabled
+18:58:28,922  INFO SettingsFactory:279 - Echoing all SQL to stdout
+18:58:28,923  INFO SettingsFactory:286 - Statistics: disabled
+18:58:28,923  INFO SettingsFactory:290 - Deleted entity synthetic identifier rollback: disabled
+18:58:28,923  INFO SettingsFactory:305 - Default entity-mode: pojo
+18:58:28,923  INFO SettingsFactory:309 - Named query checking : enabled
+18:58:28,943  INFO SessionFactoryImpl:161 - building session factory
+18:58:29,067  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+18:58:29,168 TRACE StringType:133 - binding 'Cotton' to parameter: 1
+18:58:29,169 TRACE LongType:133 - binding '3' to parameter: 2
+18:59:09,095  INFO ClassPathXmlApplicationContext:411 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]; startup date [Thu Mar 31 18:59:09 CST 2016]; root of context hierarchy
+18:59:09,141  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/config/BeanLocations_NameMatchMethodPointcut.xml]
+18:59:09,249  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/DataSource.xml]
+18:59:09,288  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/Hibernate.xml]
+18:59:09,319  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/transaction.xml]
+18:59:09,340  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/customer_NameMatchMethodPointcut.xml]
+18:59:09,362  INFO ClassPathXmlApplicationContext:426 - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922
+18:59:09,424  INFO PropertyPlaceholderConfigurer:178 - Loading properties file from class path resource [properties/database.properties]
+18:59:09,434  INFO DefaultListableBeanFactory:414 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,transactionInterceptor,transactionManager,customerDao,hijackThrowExceptionBean,customerMethodInterceptor,customerNameMatchMethodPointcut,customerDefaultPointcutAdvisor,customerDaoProxy]; root of factory hierarchy
+18:59:09,453  INFO DriverManagerDataSource:155 - Loaded JDBC driver: org.apache.derby.jdbc.ClientDriver
+18:59:09,499  INFO Environment:509 - Hibernate 3.2.3
+18:59:09,501  INFO Environment:542 - hibernate.properties not found
+18:59:09,503  INFO Environment:676 - Bytecode provider name : cglib
+18:59:09,506  INFO Environment:593 - using JDK 1.4 java.sql.Timestamp handling
+18:59:09,658  INFO HbmBinder:300 - Mapping class: com.test.testSpringHibernateAOP.customer.model.Customer -> customer
+18:59:09,674  INFO LocalSessionFactoryBean:730 - Building new Hibernate SessionFactory
+18:59:09,726  INFO ConnectionProviderFactory:72 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+18:59:09,890  INFO SettingsFactory:89 - RDBMS: Apache Derby, version: 10.9.1.0 - (1344872)
+18:59:09,891  INFO SettingsFactory:90 - JDBC driver: Apache Derby Network Client JDBC Driver, version: 10.9.1.0 - (1344872)
+18:59:09,924  INFO Dialect:152 - Using dialect: org.hibernate.dialect.DerbyDialect
+18:59:09,929  INFO TransactionFactoryFactory:34 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+18:59:09,929  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+18:59:09,929  INFO SettingsFactory:143 - Automatic flush during beforeCompletion(): disabled
+18:59:09,930  INFO SettingsFactory:147 - Automatic session close at end of transaction: disabled
+18:59:09,930  INFO SettingsFactory:162 - Scrollable result sets: enabled
+18:59:09,930  INFO SettingsFactory:170 - JDBC3 getGeneratedKeys(): disabled
+18:59:09,930  INFO SettingsFactory:178 - Connection release mode: auto
+18:59:09,931  INFO SettingsFactory:205 - Default batch fetch size: 1
+18:59:09,931  INFO SettingsFactory:209 - Generate SQL with comments: disabled
+18:59:09,931  INFO SettingsFactory:213 - Order SQL updates by primary key: disabled
+18:59:09,931  INFO SettingsFactory:382 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+18:59:09,932  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+18:59:09,933  INFO SettingsFactory:221 - Query language substitutions: {}
+18:59:09,933  INFO SettingsFactory:226 - JPA-QL strict compliance: disabled
+18:59:09,933  INFO SettingsFactory:231 - Second-level cache: enabled
+18:59:09,933  INFO SettingsFactory:235 - Query cache: disabled
+18:59:09,933  INFO SettingsFactory:369 - Cache provider: org.hibernate.cache.NoCacheProvider
+18:59:09,933  INFO SettingsFactory:250 - Optimize cache for minimal puts: disabled
+18:59:09,933  INFO SettingsFactory:259 - Structured second-level cache entries: disabled
+18:59:09,936  INFO SettingsFactory:279 - Echoing all SQL to stdout
+18:59:09,936  INFO SettingsFactory:286 - Statistics: disabled
+18:59:09,936  INFO SettingsFactory:290 - Deleted entity synthetic identifier rollback: disabled
+18:59:09,936  INFO SettingsFactory:305 - Default entity-mode: pojo
+18:59:09,936  INFO SettingsFactory:309 - Named query checking : enabled
+18:59:09,955  INFO SessionFactoryImpl:161 - building session factory
+18:59:10,081  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+18:59:10,176 TRACE StringType:133 - binding 'Cotton' to parameter: 1
+18:59:10,178 TRACE LongType:133 - binding '3' to parameter: 2
+19:02:08,250  INFO ClassPathXmlApplicationContext:411 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]; startup date [Thu Mar 31 19:02:08 CST 2016]; root of context hierarchy
+19:02:08,297  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/config/BeanLocations_NameMatchMethodPointcut.xml]
+19:02:08,410  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/DataSource.xml]
+19:02:08,447  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/Hibernate.xml]
+19:02:08,478  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/transaction.xml]
+19:02:08,502  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/customer_NameMatchMethodPointcut.xml]
+19:02:08,524  INFO ClassPathXmlApplicationContext:426 - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922
+19:02:08,589  INFO PropertyPlaceholderConfigurer:178 - Loading properties file from class path resource [properties/database.properties]
+19:02:08,598  INFO DefaultListableBeanFactory:414 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,transactionInterceptor,transactionManager,customerDao,customerMethodInterceptor,customerNameMatchMethodPointcut,customerDefaultPointcutAdvisor,customerDaoProxy]; root of factory hierarchy
+19:02:08,616  INFO DriverManagerDataSource:155 - Loaded JDBC driver: org.apache.derby.jdbc.ClientDriver
+19:02:08,658  INFO Environment:509 - Hibernate 3.2.3
+19:02:08,661  INFO Environment:542 - hibernate.properties not found
+19:02:08,662  INFO Environment:676 - Bytecode provider name : cglib
+19:02:08,665  INFO Environment:593 - using JDK 1.4 java.sql.Timestamp handling
+19:02:08,808  INFO HbmBinder:300 - Mapping class: com.test.testSpringHibernateAOP.customer.model.Customer -> customer
+19:02:08,820  INFO LocalSessionFactoryBean:730 - Building new Hibernate SessionFactory
+19:02:08,864  INFO ConnectionProviderFactory:72 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+19:02:09,025  INFO SettingsFactory:89 - RDBMS: Apache Derby, version: 10.9.1.0 - (1344872)
+19:02:09,025  INFO SettingsFactory:90 - JDBC driver: Apache Derby Network Client JDBC Driver, version: 10.9.1.0 - (1344872)
+19:02:09,058  INFO Dialect:152 - Using dialect: org.hibernate.dialect.DerbyDialect
+19:02:09,062  INFO TransactionFactoryFactory:34 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+19:02:09,062  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:02:09,063  INFO SettingsFactory:143 - Automatic flush during beforeCompletion(): disabled
+19:02:09,063  INFO SettingsFactory:147 - Automatic session close at end of transaction: disabled
+19:02:09,063  INFO SettingsFactory:162 - Scrollable result sets: enabled
+19:02:09,063  INFO SettingsFactory:170 - JDBC3 getGeneratedKeys(): disabled
+19:02:09,064  INFO SettingsFactory:178 - Connection release mode: auto
+19:02:09,064  INFO SettingsFactory:205 - Default batch fetch size: 1
+19:02:09,064  INFO SettingsFactory:209 - Generate SQL with comments: disabled
+19:02:09,064  INFO SettingsFactory:213 - Order SQL updates by primary key: disabled
+19:02:09,065  INFO SettingsFactory:382 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:02:09,066  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:02:09,066  INFO SettingsFactory:221 - Query language substitutions: {}
+19:02:09,066  INFO SettingsFactory:226 - JPA-QL strict compliance: disabled
+19:02:09,066  INFO SettingsFactory:231 - Second-level cache: enabled
+19:02:09,066  INFO SettingsFactory:235 - Query cache: disabled
+19:02:09,066  INFO SettingsFactory:369 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:02:09,067  INFO SettingsFactory:250 - Optimize cache for minimal puts: disabled
+19:02:09,067  INFO SettingsFactory:259 - Structured second-level cache entries: disabled
+19:02:09,069  INFO SettingsFactory:279 - Echoing all SQL to stdout
+19:02:09,069  INFO SettingsFactory:286 - Statistics: disabled
+19:02:09,069  INFO SettingsFactory:290 - Deleted entity synthetic identifier rollback: disabled
+19:02:09,069  INFO SettingsFactory:305 - Default entity-mode: pojo
+19:02:09,069  INFO SettingsFactory:309 - Named query checking : enabled
+19:02:09,091  INFO SessionFactoryImpl:161 - building session factory
+19:02:09,214  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:02:09,312 TRACE StringType:133 - binding 'Cotton' to parameter: 1
+19:02:09,314 TRACE LongType:133 - binding '3' to parameter: 2
+19:02:09,329 TRACE LongType:133 - binding '1' to parameter: 1
+19:02:09,331 TRACE StringType:172 - returning 'Cotton' as column: NAME0_0_
+19:02:09,331 TRACE LongType:172 - returning '3' as column: AGE0_0_
+19:02:33,725  INFO ClassPathXmlApplicationContext:411 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]; startup date [Thu Mar 31 19:02:33 CST 2016]; root of context hierarchy
+19:02:33,771  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/config/BeanLocations_ClassIntercepted.xml]
+19:02:33,899  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/DataSource.xml]
+19:02:33,936  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/Hibernate.xml]
+19:02:33,965  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/transaction.xml]
+19:02:33,989  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/customer_ClassIntercepted.xml]
+19:02:34,017  INFO ClassPathXmlApplicationContext:426 - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922
+19:02:34,079  INFO PropertyPlaceholderConfigurer:178 - Loading properties file from class path resource [properties/database.properties]
+19:02:34,087  INFO DefaultListableBeanFactory:414 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,transactionInterceptor,transactionManager,customerDao,customerMethodInterceptor,hijackThrowExceptionBean,customerDaoProxy]; root of factory hierarchy
+19:02:34,104  INFO DriverManagerDataSource:155 - Loaded JDBC driver: org.apache.derby.jdbc.ClientDriver
+19:02:34,161  INFO Environment:509 - Hibernate 3.2.3
+19:02:34,164  INFO Environment:542 - hibernate.properties not found
+19:02:34,166  INFO Environment:676 - Bytecode provider name : cglib
+19:02:34,171  INFO Environment:593 - using JDK 1.4 java.sql.Timestamp handling
+19:02:34,306  INFO HbmBinder:300 - Mapping class: com.test.testSpringHibernateAOP.customer.model.Customer -> customer
+19:02:34,318  INFO LocalSessionFactoryBean:730 - Building new Hibernate SessionFactory
+19:02:34,360  INFO ConnectionProviderFactory:72 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+19:02:34,529  INFO SettingsFactory:89 - RDBMS: Apache Derby, version: 10.9.1.0 - (1344872)
+19:02:34,529  INFO SettingsFactory:90 - JDBC driver: Apache Derby Network Client JDBC Driver, version: 10.9.1.0 - (1344872)
+19:02:34,564  INFO Dialect:152 - Using dialect: org.hibernate.dialect.DerbyDialect
+19:02:34,568  INFO TransactionFactoryFactory:34 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+19:02:34,569  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:02:34,569  INFO SettingsFactory:143 - Automatic flush during beforeCompletion(): disabled
+19:02:34,569  INFO SettingsFactory:147 - Automatic session close at end of transaction: disabled
+19:02:34,570  INFO SettingsFactory:162 - Scrollable result sets: enabled
+19:02:34,570  INFO SettingsFactory:170 - JDBC3 getGeneratedKeys(): disabled
+19:02:34,571  INFO SettingsFactory:178 - Connection release mode: auto
+19:02:34,571  INFO SettingsFactory:205 - Default batch fetch size: 1
+19:02:34,572  INFO SettingsFactory:209 - Generate SQL with comments: disabled
+19:02:34,572  INFO SettingsFactory:213 - Order SQL updates by primary key: disabled
+19:02:34,572  INFO SettingsFactory:382 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:02:34,573  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:02:34,574  INFO SettingsFactory:221 - Query language substitutions: {}
+19:02:34,574  INFO SettingsFactory:226 - JPA-QL strict compliance: disabled
+19:02:34,574  INFO SettingsFactory:231 - Second-level cache: enabled
+19:02:34,574  INFO SettingsFactory:235 - Query cache: disabled
+19:02:34,574  INFO SettingsFactory:369 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:02:34,574  INFO SettingsFactory:250 - Optimize cache for minimal puts: disabled
+19:02:34,575  INFO SettingsFactory:259 - Structured second-level cache entries: disabled
+19:02:34,577  INFO SettingsFactory:279 - Echoing all SQL to stdout
+19:02:34,577  INFO SettingsFactory:286 - Statistics: disabled
+19:02:34,577  INFO SettingsFactory:290 - Deleted entity synthetic identifier rollback: disabled
+19:02:34,577  INFO SettingsFactory:305 - Default entity-mode: pojo
+19:02:34,578  INFO SettingsFactory:309 - Named query checking : enabled
+19:02:34,601  INFO SessionFactoryImpl:161 - building session factory
+19:02:34,736  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:02:34,830 TRACE StringType:133 - binding 'Cotton' to parameter: 1
+19:02:34,832 TRACE LongType:133 - binding '3' to parameter: 2
+19:02:34,848 TRACE LongType:133 - binding '1' to parameter: 1
+19:02:34,850 TRACE StringType:172 - returning 'Cotton' as column: NAME0_0_
+19:02:34,850 TRACE LongType:172 - returning '3' as column: AGE0_0_
+19:09:11,849  INFO ClassPathXmlApplicationContext:411 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]; startup date [Thu Mar 31 19:09:11 CST 2016]; root of context hierarchy
+19:09:11,894  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/config/BeanLocations_ClassIntercepted.xml]
+19:09:12,013  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/DataSource.xml]
+19:09:12,051  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/Hibernate.xml]
+19:09:12,079  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/transaction.xml]
+19:09:12,101  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/customer_ClassIntercepted.xml]
+19:09:12,129  INFO ClassPathXmlApplicationContext:426 - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922
+19:09:12,193  INFO PropertyPlaceholderConfigurer:178 - Loading properties file from class path resource [properties/database.properties]
+19:09:12,200  INFO DefaultListableBeanFactory:414 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,transactionInterceptor,transactionManager,customerDao,customerMethodInterceptor,hijackThrowExceptionBean,customerDaoProxy]; root of factory hierarchy
+19:09:12,216  INFO DriverManagerDataSource:155 - Loaded JDBC driver: org.apache.derby.jdbc.ClientDriver
+19:09:12,269  INFO Environment:509 - Hibernate 3.2.3
+19:09:12,272  INFO Environment:542 - hibernate.properties not found
+19:09:12,274  INFO Environment:676 - Bytecode provider name : cglib
+19:09:12,277  INFO Environment:593 - using JDK 1.4 java.sql.Timestamp handling
+19:09:12,407  INFO HbmBinder:300 - Mapping class: com.test.testSpringHibernateAOP.customer.model.Customer -> customer
+19:09:12,419  INFO LocalSessionFactoryBean:730 - Building new Hibernate SessionFactory
+19:09:12,460  INFO ConnectionProviderFactory:72 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+19:09:12,623  INFO SettingsFactory:89 - RDBMS: Apache Derby, version: 10.9.1.0 - (1344872)
+19:09:12,623  INFO SettingsFactory:90 - JDBC driver: Apache Derby Network Client JDBC Driver, version: 10.9.1.0 - (1344872)
+19:09:12,659  INFO Dialect:152 - Using dialect: org.hibernate.dialect.DerbyDialect
+19:09:12,664  INFO TransactionFactoryFactory:34 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+19:09:12,665  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:09:12,665  INFO SettingsFactory:143 - Automatic flush during beforeCompletion(): disabled
+19:09:12,666  INFO SettingsFactory:147 - Automatic session close at end of transaction: disabled
+19:09:12,666  INFO SettingsFactory:162 - Scrollable result sets: enabled
+19:09:12,667  INFO SettingsFactory:170 - JDBC3 getGeneratedKeys(): disabled
+19:09:12,667  INFO SettingsFactory:178 - Connection release mode: auto
+19:09:12,668  INFO SettingsFactory:205 - Default batch fetch size: 1
+19:09:12,668  INFO SettingsFactory:209 - Generate SQL with comments: disabled
+19:09:12,668  INFO SettingsFactory:213 - Order SQL updates by primary key: disabled
+19:09:12,668  INFO SettingsFactory:382 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:09:12,669  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:09:12,670  INFO SettingsFactory:221 - Query language substitutions: {}
+19:09:12,670  INFO SettingsFactory:226 - JPA-QL strict compliance: disabled
+19:09:12,670  INFO SettingsFactory:231 - Second-level cache: enabled
+19:09:12,670  INFO SettingsFactory:235 - Query cache: disabled
+19:09:12,670  INFO SettingsFactory:369 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:09:12,670  INFO SettingsFactory:250 - Optimize cache for minimal puts: disabled
+19:09:12,671  INFO SettingsFactory:259 - Structured second-level cache entries: disabled
+19:09:12,673  INFO SettingsFactory:279 - Echoing all SQL to stdout
+19:09:12,673  INFO SettingsFactory:286 - Statistics: disabled
+19:09:12,673  INFO SettingsFactory:290 - Deleted entity synthetic identifier rollback: disabled
+19:09:12,673  INFO SettingsFactory:305 - Default entity-mode: pojo
+19:09:12,673  INFO SettingsFactory:309 - Named query checking : enabled
+19:09:12,693  INFO SessionFactoryImpl:161 - building session factory
+19:09:12,826  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:09:12,915 TRACE StringType:133 - binding 'Cotton' to parameter: 1
+19:09:12,916 TRACE LongType:133 - binding '3' to parameter: 2
+19:12:51,603  INFO ClassPathXmlApplicationContext:411 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]; startup date [Thu Mar 31 19:12:51 CST 2016]; root of context hierarchy
+19:12:51,648  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/config/BeanLocations_ClassIntercepted.xml]
+19:12:51,770  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/DataSource.xml]
+19:12:51,817  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/Hibernate.xml]
+19:12:51,843  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/transaction.xml]
+19:12:51,866  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/customer_ClassIntercepted.xml]
+19:12:51,895  INFO ClassPathXmlApplicationContext:426 - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922
+19:12:51,960  INFO PropertyPlaceholderConfigurer:178 - Loading properties file from class path resource [properties/database.properties]
+19:12:51,969  INFO DefaultListableBeanFactory:414 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,transactionInterceptor,transactionManager,customerDao,customerMethodInterceptor,hijackThrowExceptionBean,customerDaoProxy]; root of factory hierarchy
+19:12:51,987  INFO DriverManagerDataSource:155 - Loaded JDBC driver: org.apache.derby.jdbc.ClientDriver
+19:12:52,037  INFO Environment:509 - Hibernate 3.2.3
+19:12:52,040  INFO Environment:542 - hibernate.properties not found
+19:12:52,043  INFO Environment:676 - Bytecode provider name : cglib
+19:12:52,045  INFO Environment:593 - using JDK 1.4 java.sql.Timestamp handling
+19:12:52,178  INFO HbmBinder:300 - Mapping class: com.test.testSpringHibernateAOP.customer.model.Customer -> customer
+19:12:52,186  INFO LocalSessionFactoryBean:730 - Building new Hibernate SessionFactory
+19:12:52,230  INFO ConnectionProviderFactory:72 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+19:12:52,400  INFO SettingsFactory:89 - RDBMS: Apache Derby, version: 10.9.1.0 - (1344872)
+19:12:52,400  INFO SettingsFactory:90 - JDBC driver: Apache Derby Network Client JDBC Driver, version: 10.9.1.0 - (1344872)
+19:12:52,434  INFO Dialect:152 - Using dialect: org.hibernate.dialect.DerbyDialect
+19:12:52,437  INFO TransactionFactoryFactory:34 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+19:12:52,438  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:12:52,438  INFO SettingsFactory:143 - Automatic flush during beforeCompletion(): disabled
+19:12:52,438  INFO SettingsFactory:147 - Automatic session close at end of transaction: disabled
+19:12:52,439  INFO SettingsFactory:162 - Scrollable result sets: enabled
+19:12:52,439  INFO SettingsFactory:170 - JDBC3 getGeneratedKeys(): disabled
+19:12:52,439  INFO SettingsFactory:178 - Connection release mode: auto
+19:12:52,440  INFO SettingsFactory:205 - Default batch fetch size: 1
+19:12:52,440  INFO SettingsFactory:209 - Generate SQL with comments: disabled
+19:12:52,440  INFO SettingsFactory:213 - Order SQL updates by primary key: disabled
+19:12:52,440  INFO SettingsFactory:382 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:12:52,442  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:12:52,442  INFO SettingsFactory:221 - Query language substitutions: {}
+19:12:52,442  INFO SettingsFactory:226 - JPA-QL strict compliance: disabled
+19:12:52,442  INFO SettingsFactory:231 - Second-level cache: enabled
+19:12:52,443  INFO SettingsFactory:235 - Query cache: disabled
+19:12:52,443  INFO SettingsFactory:369 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:12:52,443  INFO SettingsFactory:250 - Optimize cache for minimal puts: disabled
+19:12:52,443  INFO SettingsFactory:259 - Structured second-level cache entries: disabled
+19:12:52,445  INFO SettingsFactory:279 - Echoing all SQL to stdout
+19:12:52,445  INFO SettingsFactory:286 - Statistics: disabled
+19:12:52,446  INFO SettingsFactory:290 - Deleted entity synthetic identifier rollback: disabled
+19:12:52,446  INFO SettingsFactory:305 - Default entity-mode: pojo
+19:12:52,446  INFO SettingsFactory:309 - Named query checking : enabled
+19:12:52,465  INFO SessionFactoryImpl:161 - building session factory
+19:12:52,595  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:12:52,687 TRACE StringType:133 - binding 'Cotton' to parameter: 1
+19:12:52,688 TRACE LongType:133 - binding '3' to parameter: 2
+19:12:52,704 TRACE LongType:133 - binding '1' to parameter: 1
+19:12:52,707 TRACE StringType:172 - returning 'Cotton' as column: NAME0_0_
+19:12:52,707 TRACE LongType:172 - returning '3' as column: AGE0_0_
+19:13:28,477  INFO ClassPathXmlApplicationContext:411 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]; startup date [Thu Mar 31 19:13:28 CST 2016]; root of context hierarchy
+19:13:28,526  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/config/BeanLocations_PatternMethodPointcutAdvisor.xml]
+19:13:28,643  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/DataSource.xml]
+19:13:28,682  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/database/Hibernate.xml]
+19:13:28,709  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/transaction.xml]
+19:13:28,731  INFO XmlBeanDefinitionReader:323 - Loading XML bean definitions from class path resource [spring/beans/customer_PatternMethodPointcutAdvisor.xml]
+19:13:28,759  INFO ClassPathXmlApplicationContext:426 - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@621be5d1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922
+19:13:28,802  INFO PropertyPlaceholderConfigurer:178 - Loading properties file from class path resource [properties/database.properties]
+19:13:28,811  INFO DefaultListableBeanFactory:414 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a92922: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,transactionInterceptor,transactionManager,customerDao,customerMethodInterceptor,customerPointcutAdvisor,customerDaoProxy]; root of factory hierarchy
+19:13:28,825  INFO DriverManagerDataSource:155 - Loaded JDBC driver: org.apache.derby.jdbc.ClientDriver
+19:13:28,867  INFO Environment:509 - Hibernate 3.2.3
+19:13:28,870  INFO Environment:542 - hibernate.properties not found
+19:13:28,871  INFO Environment:676 - Bytecode provider name : cglib
+19:13:28,874  INFO Environment:593 - using JDK 1.4 java.sql.Timestamp handling
+19:13:29,008  INFO HbmBinder:300 - Mapping class: com.test.testSpringHibernateAOP.customer.model.Customer -> customer
+19:13:29,020  INFO LocalSessionFactoryBean:730 - Building new Hibernate SessionFactory
+19:13:29,060  INFO ConnectionProviderFactory:72 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+19:13:29,224  INFO SettingsFactory:89 - RDBMS: Apache Derby, version: 10.9.1.0 - (1344872)
+19:13:29,224  INFO SettingsFactory:90 - JDBC driver: Apache Derby Network Client JDBC Driver, version: 10.9.1.0 - (1344872)
+19:13:29,257  INFO Dialect:152 - Using dialect: org.hibernate.dialect.DerbyDialect
+19:13:29,261  INFO TransactionFactoryFactory:34 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+19:13:29,261  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:13:29,262  INFO SettingsFactory:143 - Automatic flush during beforeCompletion(): disabled
+19:13:29,262  INFO SettingsFactory:147 - Automatic session close at end of transaction: disabled
+19:13:29,262  INFO SettingsFactory:162 - Scrollable result sets: enabled
+19:13:29,262  INFO SettingsFactory:170 - JDBC3 getGeneratedKeys(): disabled
+19:13:29,263  INFO SettingsFactory:178 - Connection release mode: auto
+19:13:29,264  INFO SettingsFactory:205 - Default batch fetch size: 1
+19:13:29,264  INFO SettingsFactory:209 - Generate SQL with comments: disabled
+19:13:29,264  INFO SettingsFactory:213 - Order SQL updates by primary key: disabled
+19:13:29,264  INFO SettingsFactory:382 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:13:29,265  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:13:29,266  INFO SettingsFactory:221 - Query language substitutions: {}
+19:13:29,266  INFO SettingsFactory:226 - JPA-QL strict compliance: disabled
+19:13:29,266  INFO SettingsFactory:231 - Second-level cache: enabled
+19:13:29,266  INFO SettingsFactory:235 - Query cache: disabled
+19:13:29,266  INFO SettingsFactory:369 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:13:29,266  INFO SettingsFactory:250 - Optimize cache for minimal puts: disabled
+19:13:29,266  INFO SettingsFactory:259 - Structured second-level cache entries: disabled
+19:13:29,268  INFO SettingsFactory:279 - Echoing all SQL to stdout
+19:13:29,269  INFO SettingsFactory:286 - Statistics: disabled
+19:13:29,269  INFO SettingsFactory:290 - Deleted entity synthetic identifier rollback: disabled
+19:13:29,269  INFO SettingsFactory:305 - Default entity-mode: pojo
+19:13:29,269  INFO SettingsFactory:309 - Named query checking : enabled
+19:13:29,292  INFO SessionFactoryImpl:161 - building session factory
+19:13:29,418  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:13:29,512 TRACE StringType:133 - binding 'Cotton' to parameter: 1
+19:13:29,513 TRACE LongType:133 - binding '3' to parameter: 2
+19:13:29,530 TRACE LongType:133 - binding '1' to parameter: 1
+19:13:29,532 TRACE StringType:172 - returning 'Cotton' as column: NAME0_0_
+19:13:29,533 TRACE LongType:172 - returning '3' as column: AGE0_0_

@@ -9,7 +9,7 @@
 		window.alert("start()");
 
 		if (typeof (eventSource) == "undefined") {
-			eventSource = new EventSource("../HelloServlet");
+			eventSource = new EventSource("../Hello");
 		}
 
 		eventSource.addEventListener('up_vote', function(event) {
@@ -48,7 +48,7 @@
 	<br>
 	<button onclick="stopEventSource()">Stop</button>
 
-	<a href="../HelloServlet">Execute</a>
+	<a href="../Hello">Execute</a>
 	<!-- Test Servlet URL -->
 
 </body>

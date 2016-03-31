@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 29, 2010 1:16:19 PM by Hibernate Tools 3.2.5.Beta -->
+<hibernate-mapping>
+	<class name="com.test.testSpringHibernateAOP.customer.model.Customer" table="customer" catalog="admin">
+		<id name="custId" type="long">
+			<column name="CUST_ID" />			
+			<generator class="identity" />			
+		</id>
+		<property name="name" type="string">
+			<column name="NAME" length="20" not-null="true"></column>
+		</property>
+		<property name="age" type="long">
+			<column name="AGE" not-null="true"></column>
+		</property>
+	</class>
+</hibernate-mapping>

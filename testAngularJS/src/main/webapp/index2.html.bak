@@ -1,0 +1,47 @@
+<html>
+	<head><meta charset="utf-8"/>
+	<title>AngularJS Example</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	</head>
+<body>
+	<h2>AngularJS Example</h2>
+  <div>          
+  <table class="table table-bordered">
+<tr><td>1</td><td><a href="example/example01.html">Tradiational Event Listenser & Console Out</a></td></tr>
+<tr><td>2</td><td><a href="example/example02.html">Tradiational Event Listenser & Span Out</a></td></tr>
+<tr><td>3</td><td><a href="example/example03.html">jQuery Event Listener</a></td></tr>
+<tr><td>4</td><td><a href="example/example04.html">Angular Simple Binding#1</a></td></tr>
+<tr><td>5</td><td><a href="example/example05.html">Angular Simple Binding#2</a></td></tr>
+<tr><td>6</td><td><a href="example/example06.html">Angular Simple Binding#3</a></td></tr>
+<tr><td>7</td><td><a href="example/example07.html">Angular Define value in <b>Global</b> scope</a></td></tr>
+<tr><td>8</td><td><a href="example/example08.html">Angular Define value in <b>Local</b> scope</a></td></tr>
+<tr><td>9</td><td><a href="example/example09.html">Angular JS <b>Watch</b> (Cannot collect the value from out-of-AngularJS)</a></td></tr> 
+<tr><td>10</td><td><a href="example/example10.html">Angular JS <b>Appy</b> (Flush value into AngularJS)</a></td></tr>
+<tr><td>11</td><td><a href="example/example11.html">Angular Foreach Array Element <b>ng-repeat</b></a></td></tr>
+<tr><td>12</td><td><a href="example/example12.html">Angular <b>Push</b> Element to Scope</a></td></tr>
+<tr><td>13</td><td><a href="example/example13.html">Angular <b>Splice</b> Element from Scope</a></td></tr>
+<tr><td>14</td><td><a href="example/example14.html">Angular Object Create (Json) & List Out</a></td></tr>
+<tr><td>15</td><td><a href="example/example15.html">Angular Object Create (Json) & Table Out</a></td></tr>
+<tr><td>16</td><td><a href="example/example16.html">Angular HTTP Get</a></td></tr>
+<tr><td>17</td><td><a href="example/example17.html">Angular Adding Search using Angular filters, <b>ng-model query</b></a></td></tr>
+<tr><td>18</td><td><a href="example/example18.html">Angular Sorting in ng-repeat using <b>orderBy</b></a></td></tr>
+<tr><td>19</td><td><a href="example/example19.html">Angular Sorting table columns interactively, Using <b>reverse</b>, <b>ng-src</b></a></td></tr>
+<tr><td>20</td><td><a href="example/example20.html">Angular Filter components in ng, <b>currency</b>, <b>number</b></a></td></tr>
+<tr><td>21</td><td><a href="example/example21.html">Angular Preparing for routing</a></td></tr>
+<tr><td>22</td><td><a href="example/example22.html">Angular <b>Routing</b> to different pages</a></td></tr>
+<tr><td>23</td><td><a href="example/example23.html">Surfacing data on the country detail page with no caches</a></td></tr>
+<tr><td>24</td><td><a href="example/example24.html">Creating a <b>service (factory)</b> for loading list of countries</a></td></tr>
+<tr><td>25</td><td><a href="example/example25.html">Caching (<b>home-growth</b>) JSON data in a service</a></td></tr>
+<tr><td>26</td><td><a href="example/example26.html">Caching (<b>Angular http built-in</b>) JSON data in a service</a></td></tr>
+<tr><td>27</td><td><a href="example/example27.html">Creating a <b>custom filter</b> (encodeURI) to encode URIs</a></td></tr>
+<tr><td>28</td><td><a href="example/example28.html">Simulating a RESTful service by <b>splitting the JSON data</b>across files (with <b>custom directives</b> & <b>local controller</b>)</a></td></tr>
+<tr><td>29</td><td><a href="example/example29.html">Extracting controllers into a <b>separate module</b></a></td></tr>
+<tr><td>30</td><td><a href="example/example30.html">Extracting factories and directives to <b>separate modules</b> using method <b>chaining</b></a></td></tr>
+
+</table></div>
+	
+</body>
+</html>

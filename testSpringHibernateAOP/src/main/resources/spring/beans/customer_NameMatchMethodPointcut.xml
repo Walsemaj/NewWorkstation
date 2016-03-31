@@ -1,0 +1,33 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	<bean id="customerDao" class="com.test.testSpringHibernateAOP.customer.dao.impl.CustomerDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+		
+	<bean id="customerMethodInterceptor" class="com.test.testSpringHibernateAOP.customer.aop.CustomerMethodInterceptor"></bean>
+		
+	<bean id="customerNameMatchMethodPointcut"
+        class="org.springframework.aop.support.NameMatchMethodPointcut">
+		<property name="mappedName" value="save" />
+	</bean>
+	
+ 	<bean id="customerDefaultPointcutAdvisor"
+		class="org.springframework.aop.support.DefaultPointcutAdvisor">
+		<property name="pointcut" ref="customerNameMatchMethodPointcut" />
+		<property name="advice" ref="customerMethodInterceptor" />
+	</bean> 
+	
+	<bean id="customerDaoProxy"
+		class="org.springframework.aop.framework.ProxyFactoryBean">
+ 
+		<property name="target" ref="customerDao" />
+ 
+		<property name="interceptorNames">
+			<list>
+				<value>customerDefaultPointcutAdvisor</value>
+			</list>
+		</property>
+	</bean>
+</beans>
