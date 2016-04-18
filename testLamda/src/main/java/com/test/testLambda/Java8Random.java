@@ -1,8 +1,10 @@
 package com.test.testLambda;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Random;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class Java8Random {
 	
@@ -32,6 +34,15 @@ public class Java8Random {
 		System.out.println("Generates random integers in a range between 33 (inclusive) and 38 (exclusive),"); 
 		System.out.println("with stream size of 10 (or 10 numbers). And print out the items with forEach.");
 		new Random().ints(10, 33, 38).forEach(System.out::println);
+		
+		System.out.println("\nGenerating non-repeating random number");	
+	    Integer[] arr = new Integer[1000];
+	    IntStream.range(0, arr.length).forEach(i ->arr[i]=++i);
+	    
+	    //P.S. SHUFFLE only applicables for Integer not int*
+	    Collections.shuffle(Arrays.asList(arr));
+	    System.out.println(Arrays.toString(arr));
+		
 	}
 	
 	private static int getRandomNumberInRangeUtilRan(int min, int max) {

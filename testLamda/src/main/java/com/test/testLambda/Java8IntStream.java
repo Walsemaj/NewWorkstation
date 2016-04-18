@@ -42,6 +42,9 @@ public class Java8IntStream {
         .peek(e -> System.out.println("Mapped value: " + e))
         .sum();
 		
+		/** 
+		 * IntSummaryStatistics
+		 */
 		//Get count, min, max, sum, and average for numbers
 		IntSummaryStatistics stats = IntStream.of(nums)
 		          .summaryStatistics();
@@ -52,12 +55,13 @@ public class Java8IntStream {
 		System.out.println("Sum of all numbers : " + stats.getSum());
 		System.out.println("Average of all numbers : " + stats.getAverage());
 
-//		Sample#2 Using IntSummaryStatistics for list of Integer
-//		List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
-//		IntSummaryStatistics statistic = numbers
-//		          .stream()
-//		          .mapToInt((x) -> x)
-//		          .summaryStatistics();
+/**		Sample#2 Using IntSummaryStatistics for list of Integer
+		List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+		IntSummaryStatistics statistic = numbers
+		          .stream()
+		          .mapToInt((x) -> x)
+		          .summaryStatistics();
+*/		
 		
 		System.out.println("\nGenerating non-repeating random number");	
 	    Integer[] arr = new Integer[1000];
