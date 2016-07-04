@@ -4,11 +4,11 @@
 <title>Angular.js Example</title>
 <script
 	src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+<script src="../bower_components/angular-touch/angular-touch.min.js"></script>	
 <script>
 	var nameApp = angular.module('nameApp', []); //With list of dependencies
 	nameApp.controller('NameCtrl', function($scope) {
 		$scope.names = [ 'Larry', 'Curly', 'Moe' ];
-
 		$scope.addName = function() {
 			$scope.names.push($scope.enteredName);
 			$scope.enteredName = '';
@@ -26,6 +26,7 @@
 		<li ng-repeat="name in names">{{name}}
 		<a href="" ng-click="removeName(name)">remove</a>
 		</li>
+		
 	</ul>
 	<form ng-submit="addName()">
 		<input type="text" ng-model="enteredName"> 
